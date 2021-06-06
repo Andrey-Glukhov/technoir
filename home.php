@@ -8,7 +8,7 @@ get_header(); ?>
       <div class="row">
         <div class="col-12">
           <div id="top_video">
-              <video width="550" height="350" controls preload="metadata">
+              <video id="start_video" width="550" height="350"  preload="metadata">
                   <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_mainanimation_1.0.mp4" >
               </video>
           </div>
@@ -23,28 +23,28 @@ get_header(); ?>
         </div>
 
     <div id="videos" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video class="barback" width="225" height="350" controls>
+        <video class="barback" width="225" height="350" muted>
         <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
     </div>
@@ -64,7 +64,7 @@ get_header(); ?>
         </div>
 
         <div id="map">
-            <img class="img-fluid" src="./img/map.png">
+            <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/Technoir_map_han_1.0.png">
         </div>
     </div>
 
