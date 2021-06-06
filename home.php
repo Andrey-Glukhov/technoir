@@ -9,7 +9,7 @@ get_header(); ?>
         <div class="col-12">
           <div id="top_video">
               <video width="550" height="350" controls preload="metadata">
-                  <source src="./vid/Technoir_mainanimation_1.0.mp4" >
+                  <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_mainanimation_1.0.mp4" >
               </video>
           </div>
           </div>
@@ -19,39 +19,39 @@ get_header(); ?>
         </div>
 
         <div id="we_need_you">
-            <img class="img-fluid" src="./img/Technoir_frontendwebsite-03-min.png" width="480" height="90">
+            <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/Technoir_frontendwebsite-03-min.png" width="480" height="90">
         </div>
 
     <div id="videos" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
-        <video width="225" height="350" controls>
-        <source src="./vid/Technoir_Web_Barback.mp4" type="video/mp4">
+        <video class="barback" width="225" height="350" controls>
+        <source src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/vid/Technoir_Web_Barback.mp4" type="video/mp4">
         </video>
     </div>
 
 
     <div id="undervideo" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <img class="img-fluid" src="./img/Technoir_frontendwebsite-02-min.png" height="535" width="1448">
+        <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/Technoir_frontendwebsite-02-min.png" height="535" width="1448">
         <div id="text">Solliciteer voor vrije functie bij nieuw te openen restaurant Tech-Noir op de witte de with.<br>
 
             Voor parttime en fulltime diensten overdag, ’s avonds, doordeweeks en in het weekend.
@@ -60,7 +60,7 @@ get_header(); ?>
     </div>
 
         <div id="location_frame">
-            <img class="img-fluid" src="./img/Technoir_frontendwebsite-05.png" width="650" height="95">
+            <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/Technoir_frontendwebsite-05.png" width="650" height="95">
         </div>
 
         <div id="map">
