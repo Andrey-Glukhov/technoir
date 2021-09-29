@@ -14,7 +14,13 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
-  <header>
-  
-	</header>
+<?php
+if(is_front_page()):
+  $tech_noir_classes = array('tech_noir_front_class', 'front_class');
+else:
+  $tech_noir_classes = array('no_tech_noir_front_class');
+endif;
+?>
+<body <?php body_class($tech_noir_classes); ?>>
+    <?php include (TEMPLATEPATH . '/navigation.php'); ?>
+

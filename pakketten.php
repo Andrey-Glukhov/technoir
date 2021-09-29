@@ -1,0 +1,25 @@
+<?php
+/**
+*Template Name: Pakketten Page
+*/
+get_header(); ?>
+
+<div class="container-fluid page-container">
+
+    <div class="pakketten_wrapper row justify-content-center">
+			<div id="we_need_back"></div>
+	        <div id="we_need_you" class="col-md-8 col-sm-10 col-12">
+                <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/header-02-min.png"/>
+            </div>
+    </div>
+    <div class="content_pakketten_wrapper row justify-content-center">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <div class="col-md-8 pakketten_content">
+            <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/pakketten.png"/>
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+</div>
+<?php get_footer(); ?>

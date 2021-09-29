@@ -127,4 +127,3 @@ function setVideoClass() {
     document.querySelector('#start_video_vertical').classList.remove('show_video');
   }
 }
-
