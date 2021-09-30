@@ -37,6 +37,30 @@ html {
     padding: 5px 10px;
 }
 
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+      position: fixed;
+      top: 56px; /* Height of navbar */
+      bottom: 0;
+      left: 100%;
+      /* width: 100%; */
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: #000000;
+      transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+      visibility: visible;
+      transform: translateX(-100%);
+    }
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
 /* ----------------------------------------------------*/
 
 #undervideo {
@@ -82,10 +106,11 @@ padding: 20px;
     background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(0,0,0,1) 90%);
     padding-bottom: 80px;
 }
-.instructions-row img{
+img.insruction_arrow{
     width: auto;
     height: 180px;
     position: absolute;
+    top: 0;
     right: 20%;
     transform: translate(0, -40px);
 }
@@ -93,6 +118,7 @@ padding: 20px;
     background-color: white;
     border-radius: 25px;
     padding: 10px 20px;
+    position: relative;
 }
 .instructions p,
 .instructions li{
