@@ -79,7 +79,7 @@ get_header(); ?>
 	<div class="row justify-content-center instructions-row">
 		<img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/werk-arrow.png">
 		<div class="instructions col-md-8 col-sm-10 col-12">
-			<h2>Dus wat moet je doen:</h2>
+			<img class="doen_title" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/doen-10.png"/>
 			<p>Stuur je CV naar vacatures@tech-noir.nl met daarin:</p>
 			<ul>
 				<li>Opleidingen en niveaus</li>
