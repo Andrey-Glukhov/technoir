@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
       });
     });
+    setVideoClass();
+    window.addEventListener("resize", function (event) {
+      setVideoClass();
+    });
   }
   if ($("#videos").length) {
     var observerOptions = {
@@ -79,10 +83,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //   document.querySelector(".file_string").innerHTML = "File:";
   // });
   // >>>
-  setVideoClass();
-  window.addEventListener("resize", function (event) {
-    setVideoClass();
-  });
+ 
 });
 
 function observerCallback(entries, observer) {
