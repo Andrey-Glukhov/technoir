@@ -38,7 +38,7 @@ html {
       top: 56px; /* Height of navbar */
       bottom: 0;
       left: 100%;
-      /* width: 100%; */
+      width: 40%;
       padding-right: 1rem;
       padding-left: 1rem;
       overflow-y: auto;
@@ -106,7 +106,7 @@ img.insruction_arrow{
     height: 180px;
     position: absolute;
     top: 0;
-    right: 20%;
+    right: 10%;
     transform: translate(0, -40px);
 }
 .instructions{
@@ -330,7 +330,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/header-back.png);
     position: absolute;
     width: 100vw;
-    height: 100%;
+    /* height: 100%; */
     min-height: 20vh;
     background-repeat: no-repeat;
     background-size: 130% auto;
@@ -896,6 +896,8 @@ background-repeat: no-repeat;
     border-radius: 12px;
     box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 .woocommerce ul.products li.tn_product a img {
     
@@ -903,8 +905,11 @@ background-repeat: no-repeat;
     margin-right: auto;
     display: block;
 }
-.woocommerce-page.post-type-archive-product {
+.woocommerce-page.post-type-archive-product, .woocommerce-page.single-product {
     background-color: #000000;
+}
+.woocommerce-page.post-type-archive-product #primary {
+    min-height: 90vh;
 }
 .woocommerce ul.products {
     margin-top: 50px;
@@ -919,7 +924,87 @@ background-repeat: no-repeat;
 .tn_single_product {
     position: relative;
     height: 60vh;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden;
+    margin-top: 50px;
 }
+.woocommerce-page.single-product .woocommerce-product-gallery {
+    /* background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden; */
+}
+.woocommerce-page.single-product  .summary.entry-summary {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 200px
+}
+.input-text.qty.text {
+    display: none;    
+}
+.variations .label {
+    display: none;
+}
+.variations .value select[name="attribute_pa_size"] {
+    display: block;
+    width: 160px; 
+    padding: .75rem 2.5rem .75rem 1rem;
+    background: none;
+    border: 3px solid #f0047f; 
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;/* убираем дефолнтные стрелочки */
+    font-family: inherit;/* наследует от родителя */
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #f0047f;
+    background-image: url(../img/sort.svg); 
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1em auto, 100%; 
+    margin-left: auto;
+}
+.variations .value select[name="attribute_pa_size"]:focus {
+    border: 3px solid #f0047f; 
+    outline: none;
+}   
+.variations .value .reset_variations {
+    height: 0;
+    font-size: 0;
+}
+table.variations {
+    width: 100%;
+}
+div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_cart_button.button.alt  {  
+    background-color: #ffffff;
+    width: 100%;
+    color: transparent;
+    background-image: url(../img/winkelmand.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: 3px solid #f0047f; 
+    border-radius: 10px;
+    background-position: center center;
+}
+.single_variation_wrap .woocommerce-variation.single_variation .woocommerce-variation-price {
+    display: none;
+}
+/* ------------------ CART----------------------*/
+.woocommerce-cart.woocommerce-page {
+    background-color: #000000;
+}
+.tn_cart_form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden;
+}
+
 
 /* ------------------ MEDIA----------------------*/
 

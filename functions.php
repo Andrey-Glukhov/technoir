@@ -106,6 +106,10 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 
 
+// Remove single product price 
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+
 // Hide shop page title
 add_filter('woocommerce_show_page_title', 'hide_shop_page_title');
 
@@ -136,7 +140,23 @@ function tn_output_content_wrapper_end() {
 	echo '</main></div>';
 
 }
+// cart page wrapper
+function tn_output_cart_wrapper() {
 
+	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
+	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
+	echo '<img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/shop-title.png"></div></div>';
+	echo '<div class="row"><div class="tn_cart_form col-10 offset-1">';
+}
+function tn_output_cart_wrapper_end() {
+
+	echo '</div></div></main></div>';
+
+}
+add_action( 'woocommerce_before_cart', 'tn_output_cart_wrapper', 20 );
+add_action( 'woocommerce_after_cart', 'tn_output_cart_wrapper_end', 20 );
+
+// change product post class
 add_filter('woocommerce_post_class', 'tn_add_product_post_class');
 
 function tn_add_product_post_class($classes) {
@@ -144,4 +164,13 @@ function tn_add_product_post_class($classes) {
 
 	return $classes_new;
 
+}
+// change variation default option
+add_filter('woocommerce_dropdown_variation_attribute_options_args', 'tn_change_default_option');
+
+function tn_change_default_option($options) {
+	if (is_array($options)) {
+		$options['show_option_none'] = 'Kiezen';
+	}	
+	return $options;
 }

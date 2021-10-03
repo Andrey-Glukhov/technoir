@@ -32,7 +32,7 @@ if ( post_password_required() ) {
 }
 ?>
 <!-- <div class="row"> -->
-<div id="product-<?php the_ID(); ?>" class="tn_single_product col-12">
+<div id="product-<?php the_ID(); ?>" class="tn_single_product col-10 offset-1">
 
 	<?php
 	/**
