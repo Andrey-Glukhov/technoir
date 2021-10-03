@@ -40,10 +40,10 @@ html {
 @media (max-width: 991.98px) {
     .offcanvas-collapse {
       position: fixed;
-      top: 56px; /* Height of navbar */
+      top: 0px; /* Height of navbar */
       bottom: 0;
       left: 100%;
-      /* width: 100%; */
+      width: 100%; 
       padding-right: 1rem;
       padding-left: 1rem;
       overflow-y: auto;
@@ -60,7 +60,9 @@ html {
   .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
-
+button.navbar-toggler{
+z-index: 1000;
+}
 /* ----------------------------------------------------*/
 
 #undervideo {
@@ -241,6 +243,9 @@ margin-right: 0;
 .reserveren_content img{
     width: 100%;
     height: auto;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
 }
 #nf-form-title-2{
     display:none;
@@ -484,6 +489,10 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     color: white;
     margin-bottom: 50px;
     margin-top: 50px;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .pancakes{
     text-align: center;
@@ -497,6 +506,10 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     margin-bottom: 50px;
     margin-top: 50px;
     height: fit-content;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .price{
     font-size: 2rem;
@@ -512,6 +525,10 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     background-color: #f0047f;
     width: fit-content;
     border-radius: 50%;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .fr-toast .v,
 .pancakes .v{
@@ -529,12 +546,20 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     background-color: #95cdb9;
     color: #a12f94;
     margin: auto;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 .savory table{
     background-color: #2f1882;
     color: #ffffff;
     margin: auto;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 .sweet td, .savory td{
@@ -550,6 +575,133 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.1rem;
+    color: #2f1882;
+    text-transform: uppercase;
+    height: fit-content;
+}
+.sandwiches table{
+    width: 90%;  
+    margin: 40px auto; 
+}
+.sandwiches table tr td{
+   padding-bottom: 20px;  
+}
+.warm{
+   border: 2px solid #f0047f; 
+   border-radius: 10px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   font-family: ff-ginger-pro, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   letter-spacing: 0.1rem;
+   color: #ffffff;
+   text-transform: uppercase;
+   padding: 25px 0;
+}
+.warm table{
+    width: 90%;  
+    margin: auto; 
+}
+.eggs{
+    background-color: #4e92b6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
+    box-shadow: 0px 0px 15px 5px #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.menu-divider img{
+    width: 100%;
+    height: auto;
+}
+.eggs td{
+    width: 50%;
+    padding: 0 15px;
+}
+.eggs td span{
+    font-size: 2.6rem;
+}
+.dinner{
+    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/dinner-14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.burger img{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+.burger img.seventy{
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    margin: auto;
+    display: block;
+}
+
+.burger{
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
+    box-shadow: 0px 0px 15px 5px #ffffff;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: fit-content;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.burger table{
+    background-color: #4e92b6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
+    box-shadow: 0px 0px 15px 5px #ffffff;
+    color: white;
+    margin: 10px auto;
+}
+.burger table td{
+    padding: 15px;
+}
+.fingerlicking_content{
+    background-color: #f0047f;
+    -webkit-box-shadow: 0px 0px 16px 4px #F0047F; 
+    box-shadow: 0px 0px 16px 4px #F0047F;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+.fingerlicking_title{
+    border-radius: 25px;
+    background: linear-gradient(
+90deg, rgba(244,229,182,1) 0%, rgba(191,102,176,1) 48%, rgba(233,246,206,1) 52%, rgba(215,132,191,1) 100%);
+}
+.fingerlicking_title img{
+    padding: 10px 15px;
+    width: 100%;
+    height: auto;
 }
 /* ------------------ CONTACTS----------------------*/
 .contact_wrapper{
@@ -919,7 +1071,6 @@ background-repeat: no-repeat;
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {  
-
 
 }
 
