@@ -1005,6 +1005,19 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     overflow: hidden;
 }
 
+/* ------------------ checkout----------------------*/
+.woocommerce-checkout.woocommerce-page {
+    background-color: #000000;
+}
+.tn_checkout_form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden;
+}
+.woocommerce-form-coupon-toggle {
+    display: none;
+}
 
 /* ------------------ MEDIA----------------------*/
 

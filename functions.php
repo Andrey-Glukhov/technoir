@@ -156,6 +156,23 @@ function tn_output_cart_wrapper_end() {
 add_action( 'woocommerce_before_cart', 'tn_output_cart_wrapper', 20 );
 add_action( 'woocommerce_after_cart', 'tn_output_cart_wrapper_end', 20 );
 
+// checkout page wrapper
+
+function tn_output_checkout_wrapper() {
+
+	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
+	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
+	echo '<img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/shop-title.png"></div></div>';
+	echo '<div class="row"><div class="tn_checkout_form col-10 offset-1">';
+}
+function tn_output_checkout_wrapper_end() {
+
+	echo '</div></div></main></div>';
+
+}
+add_action( 'woocommerce_before_checkout_form', 'tn_output_checkout_wrapper', 20 );
+add_action( 'woocommerce_after_checkout_form', 'tn_output_checkout_wrapper_end', 20 );
+
 // change product post class
 add_filter('woocommerce_post_class', 'tn_add_product_post_class');
 
