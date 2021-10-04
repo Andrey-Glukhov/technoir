@@ -8,7 +8,7 @@ get_header(); ?>
 
     <div class="reserveren_wrapper row justify-content-center">
 			<div id="we_need_back"></div>
-	        <div id="we_need_you" class="col-md-8 col-sm-10 col-12">
+	        <div id="we_need_you" class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-11">
                 <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/reserveren.png"/>
             </div>
     </div>
@@ -16,7 +16,7 @@ get_header(); ?>
     <div class="res-background-wrapper">
     <div class="content_reserveren_wrapper res-description row justify-content-center">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="col-lg-6 col-md-7 col-sm-9 col-11 contact_content">
+            <div class="col-md-8 col-sm-10 col-11 contact_content">
             <?php the_content(); ?>
             </div>
         <?php endwhile; ?>

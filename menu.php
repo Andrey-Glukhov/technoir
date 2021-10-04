@@ -14,29 +14,40 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="reserveren_wrapper row justify-content-center">
+    <div class="reserveren_wrapper row">
         <div class="col-1 breackfast">
         </div>
         <div class="col-11">
-            <div class="row">
-                <div class="col-md-6 yoghurt">
-                    <table>
-                        <tr>
-                            <td>yoghurt</td>
-                            <td>8.5</td>
-                        </tr>
-                        <tr>
-                            <td>vers fruit homemade granola (V/VG)</td>
-                        </tr>
-                    </table>
+            <div class="row yoghurt-chicken-row justify-content-between">
+                <div class="col-md-5">
+                    <div class="yoghurt">
+                        <div class="table-yoghurt-wrapper">
+                            <table>
+                                <tr>
+                                    <td><img
+                                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-24.png">
+                                    </td>
+                                    <td class="price">8.5</td>
+                                </tr>
+                                <tr>
+                                    <td>vers fruit homemade granola (V/VG)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 yoghurt">
-                    <table>
-                        <tr>
-                            <td>chicken & waffles</td>
-                            <td>12.0</td>
-                        </tr>
-                    </table>
+                <div class="col-md-5">
+                    <div class="chicken">
+                        <div class="table-chicken-wrapper">
+                        <table>
+                            <tr>
+                                <td><img
+                                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-25.png"></td>
+                                <td class="price">12.0</td>
+                            </tr>
+                        </table>
+</div>
+                    </div>
                 </div>
             </div>
 
@@ -47,19 +58,23 @@ get_header(); ?>
                             <img
                                 src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-04.png">
                         </div>
-                        <div class="col-5 fr-toast">
-                            <img
-                                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-03.png">
-                            <p>met maple syrup</p>
-                            <p class="price">8.5</p>
-                            <p class="v">(V)</p>
+                        <div class="col-6">
+                            <div class="fr-toast">
+                                <img
+                                    src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-03.png">
+                                <p>met maple syrup</p>
+                                <p class="price">8.5</p>
+                                <p class="v">(V)</p>
+                            </div>
                         </div>
-                        <div class="col-5 pancakes">
-                            <p class="v">(V)</p>
-                            <img
-                                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-05.png">
-                            <p>met maple syrup</p>
-                            <p class="price">8.5</p>
+                        <div class="col-6">
+                            <div class="pancakes">
+                                <p class="v">(V)</p>
+                                <img
+                                    src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-05.png">
+                                <p>met maple syrup</p>
+                                <p class="price">8.5</p>
+                            </div>
                         </div>
                         <div class="col-12">
                             <img
@@ -71,7 +86,7 @@ get_header(); ?>
                 <div class="col-1">
                     <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-arrow.png">
                 </div>
-                <div class="col-4 make-more">
+                <div class="col-5 make-more">
                     <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-07.png">
                     <div class="row">
                         <div class="col-6 sweet">
@@ -262,12 +277,12 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row reserveren_wrapper">
         <div class="col-12 menu-divider">
             <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-title-12.png">
         </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row reserveren_wrapper justify-content-center">
 
         <div class="col-11">
             <div class="row justify-content-around">
@@ -325,60 +340,96 @@ get_header(); ?>
                 </div>
                 <div class="col-5">
                     <div class="snacks">
-                        <table>
-                            <tr>
-                                <td>vegan bitterballen (VG)</td>
-                                <td>7.5/13.0</td>
-                            </tr>
-                            <tr>
-                                <td>bitterballen </td>
-                                <td> 6.5/11.0</td>
-                            </tr>
-                            <tr>
-                                <td>kaastengel (V)</td>
-                                <td>6.5/11.0</td>
-                            </tr>
-                            <tr>
-                                <td>vlammetjes</td>
-                                <td>6.5/11.0</td>
-                            </tr>
-                            <tr>
-                                <td>Jalapeño poppers (V) </td>
-                                <td>7.5/13.0</td>
-                            </tr>
-                            <tr>
-                                <td>Korean Fried Chicken</td>
-                                <td>8.5/15.0</td>
-                            </tr>
-                            <tr>
-                                <td>bloemkool nuggets (VG)</td>
-                                <td>7.5/13.0</td>
-                            </tr>
-                            <tr>
-                                <td>chickenwings</td>
-                                <td>7.5/13.0</td>
-                            </tr>
-                            <tr>
-                                <td>nacho’s chilli</td>
-                                <td>12.5</td>
-                            </tr>
-                            <tr>
-                                <td>Chilli con carne, cheddar, sour creme, Jalapeño nacho’s (V/vg)</td>
-                                <td>11.5</td>
-                            </tr>
-                            <tr>
-                                <td>chili sin carne, avocado, salsa, Jalapeño olijven (VG) </td>
-                                <td>3.5</td>
-                            </tr>
-                            <tr>
-                                <td>brood met smeersels (v/vg)</td>
-                                <td>6.5</td>
-                            </tr>
-                            <tr>
-                                <td>kaasplank (V)</td>
-                                <td>13.5</td>
-                            </tr>
-                        </table>
+                        <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-20.png">
+                        <div class="table-wrapper">
+                            <table>
+                                <tr>
+                                    <td>vegan bitterballen (VG)</td>
+                                    <td>7.5/13.0</td>
+                                </tr>
+                                <tr>
+                                    <td>bitterballen </td>
+                                    <td> 6.5/11.0</td>
+                                </tr>
+                                <tr>
+                                    <td>kaastengel (V)</td>
+                                    <td>6.5/11.0</td>
+                                </tr>
+                                <tr>
+                                    <td>vlammetjes</td>
+                                    <td>6.5/11.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Jalapeño poppers (V) </td>
+                                    <td>7.5/13.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Korean Fried Chicken</td>
+                                    <td>8.5/15.0</td>
+                                </tr>
+                                <tr>
+                                    <td>bloemkool nuggets (VG)</td>
+                                    <td>7.5/13.0</td>
+                                </tr>
+                                <tr>
+                                    <td>chickenwings</td>
+                                    <td>7.5/13.0</td>
+                                </tr>
+                                <tr>
+                                    <td>nacho’s chilli</td>
+                                    <td>12.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Chilli con carne, cheddar, sour creme, Jalapeño nacho’s (V/vg)</td>
+                                    <td>11.5</td>
+                                </tr>
+                                <tr>
+                                    <td>chili sin carne, avocado, salsa, Jalapeño olijven (VG) </td>
+                                    <td>3.5</td>
+                                </tr>
+                                <tr>
+                                    <td>brood met smeersels (v/vg)</td>
+                                    <td>6.5</td>
+                                </tr>
+                                <tr>
+                                    <td>kaasplank (V)</td>
+                                    <td>13.5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="bitter">
+                            <img
+                                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-22.png">
+                            <p>klein 15.0 / groot 22.0</p>
+                        </div>
+                    </div>
+
+                    <div class="frits">
+                        <img
+                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-23.png" />
+                        <div class="table-wrapper">
+                            <table>
+                                <tr>
+                                    <td>twister fries</td>
+                                    <td>Chili con carne<br>
+                                        sour creme, cheddar, Jalapeño</td>
+                                </tr>
+                                <tr>
+                                    <td>sweet potato fries</td>
+                                    <td>pulled pork<br>
+                                        black beans, avocado, chili</td>
+                                </tr>
+                                <tr>
+                                    <td>french fries</td>
+                                    <td>pulled carrot (VG) <br>
+                                        bbq sauce, black beans, avocado</td>
+                                </tr>
+                                <tr>
+                                    <td>potato wedges</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
 

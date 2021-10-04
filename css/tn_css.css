@@ -10,8 +10,6 @@ html {
   margin: 0;
 }
 
-
-
 /* ------------------ NAVIGATION ----------------------*/
 #tech-navigation.bg-light{
     position: absolute;
@@ -43,7 +41,7 @@ html {
       top: 0px; /* Height of navbar */
       bottom: 0;
       left: 100%;
-      width: 100%; 
+      width: 100%;
       padding-right: 1rem;
       padding-left: 1rem;
       overflow-y: auto;
@@ -93,8 +91,6 @@ z-index: 1000;
 #videos{
 text-align: center;
 padding: 5%;
-background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(0,0,0,1) 90%);
 }
 .instructions>h2{
 font-size: 2rem;
@@ -113,7 +109,7 @@ img.insruction_arrow{
     height: 180px;
     position: absolute;
     top: 0;
-    right: 20%;
+    right: 10%;
     transform: translate(0, -40px);
 }
 .instructions{
@@ -193,15 +189,18 @@ background: rgb(244,229,182);
 background: linear-gradient(90deg, rgba(244,229,182,1) 0%, rgba(191,102,176,1) 48%, rgba(233,246,206,1) 52%, rgba(215,132,191,1) 100%);
 border-radius: 25px;
 padding: 30px 40px;
+z-index: 100;
 }
 .content_pakketten_wrapper{
     height:auto;
-    padding: 80px;
     background-image: url(../img/pakketten-back.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
+    margin: 0;
+    padding: 40px 0;
 }
+
 .menu tr>td:first-child{
 width: 70%;
 }
@@ -214,23 +213,40 @@ width: 70%;
     color: #09023a;
     font-size: 1.3rem;
     font-weight: 700;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .menu td,
 .pakketten_content p{
     color: #09023a;
     font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
-
+.fluid-image{
+    width: 100%;
+    height: auto;
+}
 /* --------------------RESERVEREN-----------------------*/
 
 .content_reserveren_wrapper p{
     color: #ffffff;
     font-size: 1.1rem;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .content_reserveren_wrapper{
-    margin: 100px 0;
+    margin: 40px 0;
 }
 #nf-form-2-cont{
     margin: 50px 0 0 0;
@@ -239,6 +255,7 @@ width: 70%;
 .reserveren_wrapper{
 margin-left: 0;
 margin-right: 0;
+position: relative;
 }
 .reserveren_content img{
     width: 100%;
@@ -269,6 +286,12 @@ margin-right: 0;
     border-left: 4px solid #ffffff !important;
     border-right: 4px solid #868586 !important;
     color:#f0047f;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 #nf-field-5::placeholder,
 #nf-field-6::placeholder,
@@ -318,6 +341,8 @@ margin-right: 0;
 	min-height:20vh;
 	height:auto;
 	background: rgb(0,0,0);
+    position: relative;
+    margin: 0;
 }
 .content_need_wrapper{
 	height:auto;
@@ -350,6 +375,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     text-shadow: 2px 2px 16px #afeafb;
 }
 #we_need_back{
+    background-color: #000000;
     background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/header-back.png);
     position: absolute;
     width: 100vw;
@@ -357,7 +383,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     min-height: 20vh;
     background-repeat: no-repeat;
     background-size: 130% auto;
-    z-index: 100;
+    /* z-index: 100; */
     background-position: top center;
 }
 .content_need_back{
@@ -481,8 +507,6 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
 .fr-toast{
     text-align: center;
     background-color: #4e92b6;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
     box-shadow: 0px 0px 15px 5px #ffffff;
@@ -493,12 +517,12 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.1rem;
+    padding:15px;
 }
 .pancakes{
     text-align: center;
     background-color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:15px;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
     box-shadow: 0px 0px 15px 5px #ffffff;
@@ -541,6 +565,11 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
 .sweet p, .savory p{
     color: #ffffff;
     text-align: center;
+    font-size: 0.9rem;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .sweet table{
     background-color: #95cdb9;
@@ -703,12 +732,104 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     width: 100%;
     height: auto;
 }
+.snacks{
+  color: #2f1882;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    background-color: #adcfe0;
+    -webkit-box-shadow: 0px 0px 15px 7px #adcfe0; 
+box-shadow: 0px 0px 15px 7px #adcfe0;
+padding-bottom: 20px;
+}
+.snacks img,
+.bitter img{
+    width: 100%;
+    height: auto;
+}
+.table-wrapper{
+    padding: 30px;
+}
+.table-wrapper table{
+    width: 100%;
+}
+.bitter{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient( 
+90deg, rgba(244,229,182,1) 0%, rgba(191,102,176,1) 48%, rgba(233,246,206,1) 52%, rgba(215,132,191,1) 100%);
+border-radius: 25px;
+}
+.bitter p{
+    color: #2f1882;
+      text-transform: uppercase;
+      font-family: ff-ginger-pro, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0.1rem;
+      margin: 0;
+  }
+  .frits img{
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .yoghurt td img,
+  .chicken td img{
+    width: 85%;
+    height: auto;
+  }
+  .frits{
+    margin: 50px 0;
+    border: 2px solid #ffff;
+  }
+  .yoghurt{
+      margin: 20px 0;
+    color: #2f1882;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    background: linear-gradient( 
+        90deg, rgba(244,229,182,1) 0%, rgba(191,102,176,1) 48%, rgba(233,246,206,1) 52%, rgba(215,132,191,1) 100%);
+        border-radius: 15px;
+  }
+  .chicken{
+    margin: 20px 0;
+    color: #f0047f;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 15px 7px #ffffff; 
+    box-shadow: 0px 0px 15px 7px #ffffff;
+    border-radius: 15px;
+  }
+  .table-yoghurt-wrapper,
+  .table-chicken-wrapper{
+padding: 5px 15px;
+  }
+  .yoghurt-chicken-row{
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
 /* ------------------ CONTACTS----------------------*/
 .contact_wrapper{
     min-height: 20vh;
     height: auto;
     margin-right: 0;
     margin-left: 0;
+    position: relative;
 }
 
 .booths{
@@ -761,7 +882,12 @@ margin-bottom: 50px;
     text-transform: uppercase;
     font-size: 0.9rem;
     margin-bottom: 0;
-    color: white;  
+    color: white; 
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem; 
 }
 .contact_content{
     text-shadow: 0px 0px 8px rgba(255,255,255,0.97);
@@ -773,6 +899,11 @@ margin-bottom: 50px;
     font-size: 0.9rem;
     color: #09023a;
     margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .contact-col img{
 width: 100%;
@@ -780,7 +911,7 @@ height: auto;
 }
 
 .content_contact_wrapper{
-    margin: 100px 0 ;
+    margin: 40px 0 ;
 }
 
 .content_contact_wrapper p{
@@ -865,6 +996,11 @@ height: auto;
     font-size: 0.9rem;
     margin: 40px auto;
     width: auto;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 }
 .party-content td{
 padding-right: 20px;
@@ -1033,7 +1169,7 @@ background-color: #000000;
 padding-bottom:60px;
 padding-top:60px;
 background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/footer_back.png);
-background-size: 100% auto;
+background-size: 130% auto;
 background-position: bottom center;
 background-repeat: no-repeat;
 }
@@ -1062,38 +1198,410 @@ background-repeat: no-repeat;
     font-size: 0.9rem;
 }
 
+/* ------------------ PRODUCTS----------------------*/
+.products_wrapper{
+    height:auto;
+    background-color: #000;
+    /* padding: 80px; */
+    /* background-image: url(../img/pakketten-back.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.tn_product {
+  
+}
+.tn_product_image {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.woocommerce ul.products li.tn_product a img {
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.woocommerce-page.post-type-archive-product, .woocommerce-page.single-product {
+    background-color: #000000;
+}
+.woocommerce-page.post-type-archive-product #primary {
+    min-height: 90vh;
+}
+.woocommerce ul.products {
+    margin-top: 50px;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.tn_product {
+    position: relative;
+}
+
+/* ------------------ Single product----------------------*/
+
+.tn_single_product {
+    position: relative;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden;
+    margin-top: 50px;
+}
+.woocommerce-page.single-product .woocommerce-product-gallery {
+    /* background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden; */
+}
+.woocommerce-page.single-product  .summary.entry-summary {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 200px
+}
+.input-text.qty.text {
+    display: none;    
+}
+.variations .label {
+    display: none;
+}
+.variations .value select[name="attribute_pa_size"] {
+    display: block;
+    width: 160px; 
+    padding: .75rem 2.5rem .75rem 1rem;
+    background: none;
+    border: 3px solid #f0047f; 
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;/* убираем дефолнтные стрелочки */
+    font-family: inherit;/* наследует от родителя */
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #f0047f;
+    background-image: url(../img/sort.svg); 
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1em auto, 100%; 
+    margin-left: auto;
+}
+.variations .value select[name="attribute_pa_size"]:focus {
+    border: 3px solid #f0047f; 
+    outline: none;
+}   
+.variations .value .reset_variations {
+    height: 0;
+    font-size: 0;
+}
+table.variations {
+    width: 100%;
+}
+div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_cart_button.button.alt  {  
+    background-color: #ffffff;
+    width: 100%;
+    color: transparent;
+    background-image: url(../img/winkelmand.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: 3px solid #f0047f; 
+    border-radius: 10px;
+    background-position: center center;
+}
+.single_variation_wrap .woocommerce-variation.single_variation .woocommerce-variation-price {
+    display: none;
+}
+/* ------------------ CART----------------------*/
+.woocommerce-cart.woocommerce-page {
+    background-color: #000000;
+}
+.tn_cart_form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden;
+}
+
+/* ------------------ checkout----------------------*/
+.woocommerce-checkout.woocommerce-page {
+    background-color: #000000;
+}
+.tn_checkout_form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
+    overflow: hidden;
+}
+.woocommerce-form-coupon-toggle {
+    display: none;
+}
+
 /* ------------------ MEDIA----------------------*/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-
+@media (max-width: 576px) { 
+    #we_need_back,
+    .footer-wrapper{
+        background-size: 345% auto;
+        height: 100%;
+    }
+    #tech-navigation.bg-light a{
+        font-size: 1.5rem;
+    }
+    li.menu-item{
+        text-align: center;
+    }
+    .navbar-nav{
+        margin-top: 60px;
+    }
+    img.insruction_arrow{
+        display: none;
+    }
+    .content_need_you p{
+        font-size: 0.9rem;
+    }
+    .doen_title{
+        width: 100% !important;
+        margin: 20px 0;
+    }
+    .instructions-row{
+        padding-bottom: 35px;
+    }
+    .party-content{
+        margin-bottom: 35px;
+    }
+    .pakketten_content{
+        padding: 30px 15px;
+    }
+    .content_pakketten_wrapper{
+    background-image: none;
  }
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {  
+@media (min-width: 576px) and (max-width: 767px) {  
+    #we_need_back,
+    .footer-wrapper{
+        background-size: 245% auto;
+    }
+    #tech-navigation.bg-light a{
+        font-size: 1.5rem;
+    }
+    li.menu-item{
+        text-align: center;
+    }
+    .navbar-nav{
+        margin-top: 60px;
+    }
+    img.insruction_arrow{
+        right: 4%;
+        height: 160px;
+    }
+    .totoro,
+    .face-left{
+        background-size: auto 60%;
+        background-position: bottom right;
+    }
+    .duck,
+    .face-right{
+        background-size: auto 60%;
+        background-position: top left;
+    }
+    .content_pakketten_wrapper {
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-size: 145% auto;
+    }
+}
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {  
+    #we_need_back,
+    .footer-wrapper{
+        background-size: 200% auto;
+    }
+    #tech-navigation.bg-light a{
+        font-size: 1.7rem;
+    }
+    li.menu-item{
+        text-align: center;
+    }
+    .navbar-nav{
+        margin-top: 60px;
+    }
+    .content_contact_wrapper .left,
+    .content_contact_wrapper .right{
+        background-size: auto 80%;
+    }
+    .content_pakketten_wrapper {
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-size: 145% auto;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    .contact-col{
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .contact-col,
+    .content_need_you p{
         padding: 10px 30px;
     }
-
+    #tech-navigation.bg-light a{
+        font-size: 1rem;
+    }
+    .content_contact_wrapper .left,
+    .content_contact_wrapper .right{
+        background-size: auto 80%;
+    }
  }
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
+@media (min-width: 1201px) and (max-width: 1400px) { 
     .contact-col{
         padding: 10px 30px;
     }
-
+    #tech-navigation.bg-light a,
+    .content_need_you p,
+    .footer-container p,
+    .footer-container p a,
+    .instructions p, 
+    .instructions li,
+    .content_contact_wrapper p,
+    .booths p, .kitchen p, .arcade p,
+    .lounge p, .noir p,
+    .party-content table,
+    .menu td, .pakketten_content p,
+    .content_reserveren_wrapper p,
+    .nf-field-element>input#nf-field-5,
+    .nf-field-element>input#nf-field-6,
+    .nf-field-element>input#nf-field-9,
+    .nf-field-element .datepicker.pikaday__display,
+    .nf-field-element>#nf-field-7,
+    #nf-field-11-wrap .nf-field-element select,
+    .nf-field-element>#nf-field-10{
+        font-size: 1.1rem;
+    }
+    
+    .menu.title-menu td{
+        font-size: 1.5rem;
+    }
  }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
+@media (min-width: 1401px) and (max-width: 1920px){
     .contact-col{
         padding: 10px 30px;
     }
- 
+    #tech-navigation.bg-light a,
+    .content_need_you p,
+    .footer-container p,
+    .footer-container p a,
+    .instructions p, 
+    .instructions li,
+    .content_contact_wrapper p,
+    .booths p, .kitchen p, .arcade p,
+    .lounge p, .noir p,
+    .party-content table,
+    .menu td, .pakketten_content p,
+    .content_reserveren_wrapper p,
+    .nf-field-element>input#nf-field-5,
+    .nf-field-element>input#nf-field-6,
+    .nf-field-element>input#nf-field-9,
+    .nf-field-element .datepicker.pikaday__display,
+    .nf-field-element>#nf-field-7,
+    #nf-field-11-wrap .nf-field-element select,
+    .nf-field-element>#nf-field-10{
+        font-size: 1.3rem;
+    }
+    .menu.title-menu td{
+        font-size: 1.7rem;
+    }
+    img.insruction_arrow{
+        height: 250px;
+    }
+    .modal-dialog{
+        max-width: 650px;
+    }
+    .modal-body p, .modal-header h5{
+        font-size: 1.6rem;
+    }
+    .modal-body li{
+        font-size: 1.4rem;
+    }
+ }
+ @media (min-width: 1401px) and (max-width: 1700px){
+    .content_pakketten_wrapper{
+        background-size: auto 100%;
+        background-position: center top;
+    }
+ }
+
+ @media (min-width: 1701px) and (max-width: 1920px){
+    .content_pakketten_wrapper{
+        background-size: auto 117%;
+        background-position: center top;
+    }
+ }
+ /* XXX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1921px) {
+
+    #tech-navigation.bg-light a,
+    .content_need_you p,
+    .footer-container p,
+    .footer-container p a,
+    .instructions p, 
+    .instructions li,
+    .content_contact_wrapper p,
+    .booths p, .kitchen p, .arcade p,
+    .lounge p, .noir p,
+    .party-content table, .yoghurt,
+    .menu td, .pakketten_content p,
+    .content_reserveren_wrapper p,
+    .nf-field-element>input#nf-field-5,
+    .nf-field-element>input#nf-field-6,
+    .nf-field-element>input#nf-field-9,
+    .nf-field-element .datepicker.pikaday__display,
+    .nf-field-element>#nf-field-7,
+    #nf-field-11-wrap .nf-field-element select,
+    .nf-field-element>#nf-field-10{
+        font-size: 1.7rem;
+    }
+    .menu.title-menu td{
+        font-size: 2rem;
+    }
+    img.insruction_arrow{
+        height: 300px;
+    }
+    .modal-dialog{
+        max-width: 1000px;
+    }
+    .modal-body p, .modal-header h5{
+        font-size: 2.4rem;
+    }
+    .modal-body li{
+        font-size: 1.9rem;
+    }
+    .content_contact_wrapper .left,
+    .totoro, .face-left, .pig{
+        background-position: center left;
+        background-size: contain;
+    }
+    .content_contact_wrapper .right,
+    .duck, .face-right, .pika{
+        background-position: center right;
+        background-size: contain;
+    }
+    .content_pakketten_wrapper{
+        background-size: auto 115%;
+        background-position: center top;
+    }
+    .nf-form-content .listselect-wrap .nf-field-element div, 
+    .nf-form-content input.ninja-forms-field, 
+    .nf-form-content select.ninja-forms-field:not([multiple]){
+        height: 70px !important;
+
+    }
  }

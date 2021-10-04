@@ -8,7 +8,7 @@ get_header(); ?>
 
     <div class="contact_wrapper row justify-content-center">
 			<div id="we_need_back"></div>
-	        <div id="we_need_you" class="col-md-8 col-sm-10 col-12">
+	        <div id="we_need_you" class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-11">
                 <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/header-01-min.png"/>
             </div>
     </div>
