@@ -9,7 +9,7 @@ get_header(); ?>
     <div class="contact_wrapper row justify-content-center">
 			<div id="we_need_back"></div>
 	        <div id="we_need_you" class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-11">
-                <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/header-01-min.png"/>
+                <img class="img-fluid" src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/header-01-min.png"/>
             </div>
     </div>
     <div class="content_contact_wrapper row justify-content-md-between justify-content-sm-center justify-content-center">
@@ -30,9 +30,9 @@ get_header(); ?>
         <div class="col-2 d-sm-block d-none totoro"></div>
 
         <div class="col-md-4 d-md-block d-sm-none d-none contact-col">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/goast.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/goast.png">
             <div class="booths">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/tech.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/tech.png">
             <p>Het daghoreca gedeelte met Cozy comfortabele booths, hoge tafels aan het raam, 
                 pastel tinten, planten en neon. Hier geniet je overdag van de lekkerste diner 
                 classics zoals Pancakes met alle toppings, Chicken & waffles, de beste French 
@@ -43,13 +43,13 @@ get_header(); ?>
 
         <div class="col-md-4 d-md-block d-sm-none d-none contact-col">
             <div class="kitchen">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_5.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/contact_back_5.png">
             <p>Met grote schermen die onze producten aanprijzen boven de keuken kan alles aan de 
                 keuken besteld worden aan hapjes en maaltijden om te delen.
             </p>
             </div>
             <div class="lounge">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/lounge.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/lounge.png">
             <p>is lekker laag zitten op grote banken genieten van verschillende verse cocktails en 
                 heerlijke snacks of overdag met de krant en een havercappucino.
             </p>
@@ -57,9 +57,9 @@ get_header(); ?>
         </div>
 
         <div class="col-sm-8 col-11 d-md-none d-sm-block d-block contact-col">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/goast.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/goast.png">
             <div class="booths">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/tech.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/tech.png">
             <p>Het daghoreca gedeelte met Cozy comfortabele booths, hoge tafels aan het raam, 
                 pastel tinten, planten en neon. Hier geniet je overdag van de lekkerste diner 
                 classics zoals Pancakes met alle toppings, Chicken & waffles, de beste French 
@@ -68,13 +68,13 @@ get_header(); ?>
             </div>
 
             <div class="kitchen">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_5.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/contact_back_5.png">
             <p>Met grote schermen die onze producten aanprijzen boven de keuken kan alles aan de 
                 keuken besteld worden aan hapjes en maaltijden om te delen.
             </p>
             </div>
             <div class="lounge">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/lounge.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/lounge.png">
             <p>is lekker laag zitten op grote banken genieten van verschillende verse cocktails en 
                 heerlijke snacks of overdag met de krant en een havercappucino.
             </p>
@@ -92,7 +92,7 @@ get_header(); ?>
 
         <div class="col-lg-4 d-lg-block d-md-none d-sm-none d-none contact-col">
             <div class="arcade">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/arcade.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/arcade.png">
             <p>Achterin bevind zich de Arcade, onze evenementen ruimte met podium en dansvloer.
             Hier gaan de mooiste 80’s & 90’s parties plaatsvinden, dj avondjes, live optredens 
             en film avonden. Hier is natuurlijk ook de mooiste ruimte voor verjaardagen, 
@@ -102,7 +102,7 @@ get_header(); ?>
         </div>
         <div class="col-lg-4 d-lg-block d-md-none d-sm-none d-none contact-col">
             <div class="noir">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/noir.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/noir.png">
             <p>Hier is het hoog drink en avond gedeelte, met veel hoge tafels en krukken, 
                 een grote bar met elke drank die je maar kan verzinnen, behendige barmannen 
                 en de heerlijkste dinerclassics (burgers, Chicken, Loaded Fries) om te delen of om te snacken.
@@ -114,7 +114,7 @@ get_header(); ?>
 
         <div class="col-sm-8 col-11 d-lg-none d-md-block contact-col">
         <div class="arcade">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/arcade.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/arcade.png">
             <p>Achterin bevind zich de Arcade, onze evenementen ruimte met podium en dansvloer.
             Hier gaan de mooiste 80’s & 90’s parties plaatsvinden, dj avondjes, live optredens 
             en film avonden. Hier is natuurlijk ook de mooiste ruimte voor verjaardagen, 
@@ -123,7 +123,7 @@ get_header(); ?>
             </div>
 
             <div class="noir">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/noir.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/noir.png">
             <p>Hier is het hoog drink en avond gedeelte, met veel hoge tafels en krukken, 
                 een grote bar met elke drank die je maar kan verzinnen, behendige barmannen 
                 en de heerlijkste dinerclassics (burgers, Chicken, Loaded Fries) om te delen of om te snacken.
@@ -141,7 +141,7 @@ get_header(); ?>
     <div class="contact_wrapper row justify-content-md-between justify-content-sm-center justify-content-center with_padding">
         <div class="col-2 d-sm-block d-none pig"></div>
         <div class="col-lg-5 col-md-8 col-sm-8 col-11 party-content">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/party.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/party.png">
         <table>
             <tr>
                 <td>all day breakfast</td>

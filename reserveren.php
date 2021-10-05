@@ -9,7 +9,7 @@ get_header(); ?>
     <div class="reserveren_wrapper row justify-content-center">
 			<div id="we_need_back"></div>
 	        <div id="we_need_you" class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-11">
-                <img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/reserveren.png"/>
+                <img class="img-fluid" src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/reserveren.png"/>
             </div>
     </div>
 
@@ -26,7 +26,7 @@ get_header(); ?>
 
     <div class="content_reserveren_wrapper row justify-content-center">
         <div class="col-lg-6 col-md-7 col-sm-9 col-11 reserveren_content">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/reserveren-nu.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/reserveren-nu.png">
             <?php echo do_shortcode( '[ninja_form id=2]' ); ?>
         </div>
     </div>
@@ -35,10 +35,10 @@ get_header(); ?>
     <div class="reserveren_wrapper row justify-content-center"> 
         <div class="col-md-8 col-sm-10 col-11">
                  <video class="map_video" preload="auto" autoplay loop muted width="650px">
-                    <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/MAP ANIMATION.mp4" type="video/mp4">
+                    <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/MAP ANIMATION.mp4" type="video/mp4">
                 </video>
                 <video class="map_video_vertical"  preload="auto" autoplay loop muted width="650px">
-                    <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/MAP ANIMATION 2.0.mp4" type="video/mp4">
+                    <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/MAP ANIMATION 2.0.mp4" type="video/mp4">
                 </video>
         </div> 
     </div> 

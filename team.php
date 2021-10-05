@@ -9,7 +9,7 @@ get_header(); ?>
         <div id="we_need_back"></div>
         <div id="we_need_you" class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-11">
             <img class="img-fluid"
-                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/werk-title.png" />
+                src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/werk-title.png" />
         </div>
     </div>
     <div class="content_need_wrapper content_pakketten_wrapper row justify-content-center">
@@ -33,7 +33,7 @@ get_header(); ?>
                 <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 padding_b" data-bs-toggle="modal"
                     data-bs-target="#floormanager">
                     <video width="225" height="350" preload="auto" muted>
-                        <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_Web_floormanager.mp4"
+                        <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/Technoir_Web_floormanager.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -41,7 +41,7 @@ get_header(); ?>
                 <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 padding_b" data-bs-toggle="modal"
                     data-bs-target="#barpersoneel">
                     <video width="225" height="350" preload="auto" muted>
-                        <source src="https://tech-noir.nl//wp-content/themes/technoir/vid/Technoir_Web_barpersoneel.mp4"
+                        <source src="<?php echo get_site_url();?>//wp-content/themes/technoir/vid/Technoir_Web_barpersoneel.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -49,7 +49,7 @@ get_header(); ?>
                 <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 padding_b" data-bs-toggle="modal"
                     data-bs-target="#bedienend">
                     <video width="225" height="350" preload="auto" muted>
-                        <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_Web_bediening.mp4"
+                        <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/Technoir_Web_bediening.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -57,7 +57,7 @@ get_header(); ?>
                 <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 padding_b" data-bs-toggle="modal"
                     data-bs-target="#barhoofd">
                     <video width="225" height="350" preload="auto" muted>
-                        <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_Web_barhoofd.mp4"
+                        <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/Technoir_Web_barhoofd.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -65,7 +65,7 @@ get_header(); ?>
                 <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 padding_b" data-bs-toggle="modal"
                     data-bs-target="#chef">
                     <video width="225" height="350" preload="auto" muted>
-                        <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_Web_chef-kok.mp4"
+                        <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/Technoir_Web_chef-kok.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -74,7 +74,7 @@ get_header(); ?>
                     data-bs-target="#keukenpersoneel">
                     <video width="225" height="350" preload="auto" muted>
                         <source
-                            src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_Web_keukenpersoneel.mp4"
+                            src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/Technoir_Web_keukenpersoneel.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -82,7 +82,7 @@ get_header(); ?>
                 <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 padding_b" data-bs-toggle="modal"
                     data-bs-target="#barbacks">
                     <video width="225" height="350" preload="auto" muted>
-                        <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_Web_barbacks.mp4"
+                        <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/Technoir_Web_barbacks.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -90,7 +90,7 @@ get_header(); ?>
                 <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 padding_b" data-bs-toggle="modal"
                     data-bs-target="#spoel">
                     <video width="225" height="350" preload="auto" muted>
-                        <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_Web_spoelers.mp4"
+                        <source src="<?php echo get_site_url();?>/wp-content/themes/technoir/vid/Technoir_Web_spoelers.mp4"
                             type="video/mp4">
                     </video>
                 </div>
@@ -100,10 +100,10 @@ get_header(); ?>
     </div>
  
     <div class="row justify-content-center instructions-row">
-        <!-- <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/werk-arrow.png"> -->
+        <!-- <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/werk-arrow.png"> -->
         <div class="instructions col-md-8 col-sm-10 col-11">
             <img class="doen_title"
-                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/doen-10.png" />
+                src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/doen-10.png" />
             <p>Stuur je CV naar vacatures@tech-noir.nl met daarin:</p>
             <ul>
                 <li>Opleidingen en niveaus</li>
@@ -116,7 +116,7 @@ get_header(); ?>
                     dagen of alleen woensdag en donderdag.</li>
             </ul>
             <img class="insruction_arrow"
-                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/werk-arrow.png">
+                src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/werk-arrow.png">
         </div>
     </div>
 

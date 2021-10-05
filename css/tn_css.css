@@ -316,7 +316,7 @@ position: relative;
     margin-bottom: 0;
 }
 .res-background-wrapper{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/reserveren-back.png);
+    background-image: url(../img/reserveren-back.png);
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -376,7 +376,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
 }
 #we_need_back{
     background-color: #000000;
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/header-back.png);
+    background-image: url(../img/header-back.png);
     position: absolute;
     width: 100vw;
     height: 100%;
@@ -478,8 +478,30 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     display: none;
     padding-bottom: 50px;
 }
-
-
+.menu-divider{
+	padding:0 !important;
+}
+.fingerlicking_content td{
+	padding:0 10px 0 0;
+}
+table td{
+	vertical-align:top;
+}
+.frits table{
+	color:#ffffff;
+	text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+}
+.frits td{
+	padding: 10px 12px;
+}
+.frits .with-border{
+	border-right:2px solid #01a0c6;
+}
 @media only screen and (max-width: 1050px)  {
     
     .map_video {
@@ -494,7 +516,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
 /* ------------------ MENU----------------------*/
 
 .breackfast{
-    background-image:url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/breackfast.png) ;
+    background-image:url(../img/breackfast.png) ;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -660,7 +682,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     font-size: 2.6rem;
 }
 .dinner{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/dinner-14.png);
+    background-image: url(../img/dinner-14.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -694,6 +716,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     letter-spacing: 0.1rem;
     color: #ffffff;
     text-transform: uppercase;
+	font-size:1.1rem;
 }
 .burger table{
     background-color: #4e92b6;
@@ -704,6 +727,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     box-shadow: 0px 0px 15px 5px #ffffff;
     color: white;
     margin: 10px auto;
+	max-width:85%;
 }
 .burger table td{
     padding: 15px;
@@ -733,7 +757,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     height: auto;
 }
 .snacks{
-  color: #2f1882;
+  	color: #2f1882;
     text-transform: uppercase;
     font-family: ff-ginger-pro, sans-serif;
     font-weight: 400;
@@ -741,8 +765,9 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
     letter-spacing: 0.1rem;
     background-color: #adcfe0;
     -webkit-box-shadow: 0px 0px 15px 7px #adcfe0; 
-box-shadow: 0px 0px 15px 7px #adcfe0;
-padding-bottom: 20px;
+	box-shadow: 0px 0px 15px 7px #adcfe0;
+	padding-bottom: 20px;
+	font-size:1.1rem;
 }
 .snacks img,
 .bitter img{
@@ -840,7 +865,6 @@ padding: 5px 15px;
     -webkit-box-shadow: 0px 0px 17px 10px rgb(240 4 127 / 70%);
     box-shadow: 0px 0px 17px 10px rgb(240 4 127 / 70%);
     color: white;
-    margin-bottom: 50px;
 }
 .kitchen{
     background-color: #4e92b6;
@@ -860,8 +884,8 @@ padding: 5px 15px;
     -webkit-box-shadow: 0px 0px 15px 5px #ffffff; 
     box-shadow: 0px 0px 15px 5px #ffffff;
     color: white;
-    margin-bottom: 40px;
 }
+
 .lounge{
     background-color: #ffffff;
     padding-top: 10px;
@@ -926,38 +950,38 @@ height: auto;
 }
 
 .content_contact_wrapper .left{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_1.png);
+    background-image: url(../img/contact_back_1.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center right;
 }
 
 .content_contact_wrapper .right{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_2.png);
+    background-image: url(../img/contact_back_2.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center left;
 }
 .totoro{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_3.png);
+    background-image: url(../img/contact_back_3.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center right;
 }
 .duck{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_4.png);
+    background-image: url(../img/contact_back_4.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center left;
 }
 .face-left{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_6.png);
+    background-image: url(../img/contact_back_6.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: right;
 }
 .face-right{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_7.png);
+    background-image: url(../img/contact_back_7.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: left;
@@ -968,19 +992,19 @@ height: auto;
 }
 .form_heading {
     margin: auto;
-    background-image: url(https://tech-noir.nl/wp-content/themes/technoir/img/contact_heading.png);
+    background-image: url(../img/contact_heading.png);
     background-size: cover;
     width: 30vw;
     height: 8vw;
 }
 .pig{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_8.png);
+    background-image: url(../img/contact_back_8.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: right;
 }
 .pika{
-    background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/contact_back_9.png);
+    background-image: url(../img/contact_back_9.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: left; 
@@ -1112,7 +1136,7 @@ padding-right: 20px;
         bottom: 16px;
         width: 5%;
         height: 10%;
-        background-image: url(https://tech-noir.nl/wp-content/themes/technoir/img/attach.svg);
+        background-image: url(../img/attach.svg);
         background-repeat: no-repeat;
         background-position: left;
         cursor: pointer;
@@ -1168,7 +1192,7 @@ padding-right: 20px;
 background-color: #000000;
 padding-bottom:60px;
 padding-top:60px;
-background-image: url(http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/footer_back.png);
+background-image: url(../img/footer_back.png);
 background-size: 130% auto;
 background-position: bottom center;
 background-repeat: no-repeat;
@@ -1447,7 +1471,7 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
 @media (min-width: 992px) and (max-width: 1200px) { 
     .contact-col,
     .content_need_you p{
-        padding: 10px 30px;
+        padding: 10px;
     }
     #tech-navigation.bg-light a{
         font-size: 1rem;
@@ -1461,7 +1485,7 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1201px) and (max-width: 1400px) { 
     .contact-col{
-        padding: 10px 30px;
+        padding: 10px;
     }
     #tech-navigation.bg-light a,
     .content_need_you p,
@@ -1566,7 +1590,8 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .nf-field-element .datepicker.pikaday__display,
     .nf-field-element>#nf-field-7,
     #nf-field-11-wrap .nf-field-element select,
-    .nf-field-element>#nf-field-10{
+    .nf-field-element>#nf-field-10,
+	.burger, .snacks{
         font-size: 1.7rem;
     }
     .menu.title-menu td{

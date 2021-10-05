@@ -10,7 +10,7 @@ get_header(); ?>
         <div id="we_need_back"></div>
         <div id="we_need_you" class="col-md-8 col-sm-10 col-12">
             <img class="img-fluid"
-                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/header-03-min.png" />
+                src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/header-03-min.png" />
         </div>
     </div>
 
@@ -25,7 +25,7 @@ get_header(); ?>
                             <table>
                                 <tr>
                                     <td><img
-                                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-24.png">
+                                            src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-24.png">
                                     </td>
                                     <td class="price">8.5</td>
                                 </tr>
@@ -42,7 +42,7 @@ get_header(); ?>
                         <table>
                             <tr>
                                 <td><img
-                                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-25.png"></td>
+                                            src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-25.png"></td>
                                 <td class="price">12.0</td>
                             </tr>
                         </table>
@@ -56,12 +56,12 @@ get_header(); ?>
                     <div class="row justify-content-between">
                         <div class="col-12">
                             <img
-                                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-04.png">
+                                src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-04.png">
                         </div>
                         <div class="col-6">
                             <div class="fr-toast">
                                 <img
-                                    src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-03.png">
+                                    src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-03.png">
                                 <p>met maple syrup</p>
                                 <p class="price">8.5</p>
                                 <p class="v">(V)</p>
@@ -71,23 +71,23 @@ get_header(); ?>
                             <div class="pancakes">
                                 <p class="v">(V)</p>
                                 <img
-                                    src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-05.png">
+                                    src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-05.png">
                                 <p>met maple syrup</p>
                                 <p class="price">8.5</p>
                             </div>
                         </div>
                         <div class="col-12">
                             <img
-                                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-02.png">
+                                src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-02.png">
                         </div>
                     </div>
 
                 </div>
                 <div class="col-1">
-                    <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-arrow.png">
+                    <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-arrow.png">
                 </div>
                 <div class="col-5 make-more">
-                    <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-07.png">
+                    <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-07.png">
                     <div class="row">
                         <div class="col-6 sweet">
                             <p>SWEET</p>
@@ -189,7 +189,7 @@ get_header(); ?>
                 <div class="col-5">
                     <div class="warm">
                         <img
-                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-09-min.png">
+                            src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-09-min.png">
                         <table>
                             <tr>
                                 <td>Homemade Burger <br>
@@ -200,7 +200,7 @@ get_header(); ?>
                                 <td> 13.5 </td>
                             </tr>
                         </table>
-                        <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-11.png">
+                        <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-11.png">
                         <table>
                             <tr>
                                 <td>Rendang <br>
@@ -221,7 +221,7 @@ get_header(); ?>
                         <table>
                             <tr>
                                 <td span="1"><img
-                                        src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-13.png">
+                                        src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-13.png">
                                 </td>
                                 <td span="1"><span>8.5</span><br>
                                     - scrambled<br>
@@ -235,7 +235,7 @@ get_header(); ?>
 
                 </div>
                 <div class="col-5 sandwiches">
-                    <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-08-min.png">
+                    <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-08-min.png">
                     <table>
                         <tr>
                             <td>gemarineerde feta (v) <br>
@@ -279,31 +279,32 @@ get_header(); ?>
     </div>
     <div class="row reserveren_wrapper">
         <div class="col-12 menu-divider">
-            <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-title-12.png">
+            <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-title-12.png">
         </div>
     </div>
     <div class="row reserveren_wrapper justify-content-center">
 
         <div class="col-11">
             <div class="row justify-content-around">
-                <div class="col-5">
+                <div class="col-lg-5 col-md-6 col-sm-8 col-10">
                     <div class="burger">
-                        <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-15.png">
+                        <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-15.png">
                         <table>
                             <tr>
                                 <td>- 100% beefpatty<br>
                                     - korean fried chicken<br>
                                     - vegan kikkererwt - rode biet (VG)</td>
-                                <td>13.5</td>
+                                <td class="price">13.5</td>
                             </tr>
                         </table>
                         <img class="seventy"
-                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-17.png">
+                            src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-17.png">
                     </div>
                     <div class="fingerlicking_title">
-                        <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-16.png">
+                        <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-16.png">
                     </div>
                     <div class="fingerlicking_content">
+						<div class="table-wrapper">
                         <table>
                             <tr>
                                 <td> spare ribs (700gr)<br>
@@ -336,11 +337,12 @@ get_header(); ?>
                                 <td>15.0</td>
                             </tr>
                         </table>
+							</div>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-5 col-md-6 col-sm-8 col-10">
                     <div class="snacks">
-                        <img src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-20.png">
+                        <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-20.png">
                         <div class="table-wrapper">
                             <table>
                                 <tr>
@@ -399,33 +401,33 @@ get_header(); ?>
                         </div>
                         <div class="bitter">
                             <img
-                                src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-22.png">
+                                src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-22.png">
                             <p>klein 15.0 / groot 22.0</p>
                         </div>
                     </div>
 
                     <div class="frits">
                         <img
-                            src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/menu-23.png" />
+                            src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-23.png" />
                         <div class="table-wrapper">
                             <table>
                                 <tr>
-                                    <td>twister fries</td>
+                                    <td class="with-border">twister fries</td>
                                     <td>Chili con carne<br>
                                         sour creme, cheddar, Jalapeño</td>
                                 </tr>
                                 <tr>
-                                    <td>sweet potato fries</td>
+                                    <td class="with-border">sweet potato fries</td>
                                     <td>pulled pork<br>
                                         black beans, avocado, chili</td>
                                 </tr>
                                 <tr>
-                                    <td>french fries</td>
+                                    <td class="with-border">french fries</td>
                                     <td>pulled carrot (VG) <br>
                                         bbq sauce, black beans, avocado</td>
                                 </tr>
                                 <tr>
-                                    <td>potato wedges</td>
+                                    <td class="with-border">potato wedges</td>
                                     <td></td>
                                 </tr>
                             </table>
