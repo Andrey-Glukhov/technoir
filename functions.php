@@ -130,7 +130,7 @@ function tn_output_content_wrapper() {
 
 	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
 	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
-	echo '<img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/shop-title.png"></div></div>';
+	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/shop-title.png"></div></div>';
 }
 
 add_action( 'woocommerce_after_main_content', 'tn_output_content_wrapper_end', 10 );
@@ -145,7 +145,7 @@ function tn_output_cart_wrapper() {
 
 	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
 	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
-	echo '<img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/shop-title.png"></div></div>';
+	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/shop-title.png"></div></div>';
 	echo '<div class="row"><div class="tn_cart_form col-10 offset-1">';
 }
 function tn_output_cart_wrapper_end() {
@@ -162,7 +162,7 @@ function tn_output_checkout_wrapper() {
 
 	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
 	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
-	echo '<img class="img-fluid" src="http://localhost:8888/technoir/wordpress/wp-content/themes/technoir/img/shop-title.png"></div></div>';
+	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/shop-title.png"></div></div>';
 	echo '<div class="row"><div class="tn_checkout_form col-10 offset-1">';
 }
 function tn_output_checkout_wrapper_end() {
