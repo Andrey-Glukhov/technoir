@@ -482,7 +482,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(10,14,83,1) 50%, rgba(
 	padding:0 !important;
 }
 .fingerlicking_content td{
-	padding:0 10px 0 0;
+	padding:0 10px 10px 0;
 }
 table td{
 	vertical-align:top;
@@ -495,6 +495,7 @@ table td{
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.1rem;
+    font-size: 1.1rem;
 }
 .frits td{
 	padding: 10px 12px;
@@ -540,6 +541,7 @@ table td{
     font-style: normal;
     letter-spacing: 0.1rem;
     padding:15px;
+    font-size: 1.1rem;
 }
 .pancakes{
     text-align: center;
@@ -556,6 +558,7 @@ table td{
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.1rem;
+    font-size: 1.1rem;
 }
 .price{
     font-size: 2rem;
@@ -563,10 +566,12 @@ table td{
 }
 .make-more{
     border: 3px solid #829eca;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .v{
-    margin: 5px;
+    margin: 15px;
     padding: 10px;
     background-color: #f0047f;
     width: fit-content;
@@ -592,16 +597,19 @@ table td{
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.1rem;
+    font-size: 1.1rem;
 }
+
 .sweet table{
     background-color: #95cdb9;
     color: #a12f94;
-    margin: auto;
+    width: 100%;
     font-family: ff-ginger-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    font-size: 1.1rem;
 }
 .savory table{
     background-color: #2f1882;
@@ -612,6 +620,8 @@ table td{
     font-style: normal;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    width: 100%;
+    font-size: 1.1rem;
 }
 .sweet td, .savory td{
     padding: 5px;
@@ -629,6 +639,8 @@ table td{
     color: #2f1882;
     text-transform: uppercase;
     height: fit-content;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
 }
 .sandwiches table{
     width: 90%;  
@@ -649,6 +661,7 @@ table td{
    color: #ffffff;
    text-transform: uppercase;
    padding: 25px 0;
+   font-size: 1.1rem;
 }
 .warm table{
     width: 90%;  
@@ -669,6 +682,7 @@ table td{
     letter-spacing: 0.1rem;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 1.1rem;
 }
 .menu-divider img{
     width: 100%;
@@ -679,7 +693,7 @@ table td{
     padding: 0 15px;
 }
 .eggs td span{
-    font-size: 2.6rem;
+    font-size: 2rem;
 }
 .dinner{
     background-image: url(../img/dinner-14.png);
@@ -745,6 +759,7 @@ table td{
     color: #ffffff;
     text-transform: uppercase;
     border-radius: 25px;
+    font-size: 1.1rem;
 }
 .fingerlicking_title{
     border-radius: 25px;
@@ -847,6 +862,51 @@ padding: 5px 15px;
   .yoghurt-chicken-row{
       margin-top: 20px;
       margin-bottom: 20px;
+  }
+  .dessert img, .side_dishes img{
+width: 100%;
+height: auto;
+  }
+  .dessert table{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+  }
+  .dessert{
+    margin: 50px 0;
+    border: 2px solid #ffff;
+    border-radius: 25px;
+  }
+  .dessert table{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+  }
+  .side_dishes table{
+    color: #f0047f;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+  }
+  .side_dishes{
+    padding: 10px;
+    background: linear-gradient( 
+90deg, rgba(244,229,182,1) 0%, rgba(191,102,176,1) 48%, rgba(233,246,206,1) 52%, rgba(215,132,191,1) 100%);
+    border-radius: 25px;
+  }
+  .with_border{
+      border-right: 3px solid #f0047f;
   }
 /* ------------------ CONTACTS----------------------*/
 .contact_wrapper{
@@ -1404,6 +1464,30 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .content_pakketten_wrapper{
     background-image: none;
  }
+ .fr-toast, .pancakes{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fr-toast, .pancakes{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.eggs, .sandwiches{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.menu-row img{
+    padding-top: 10px;
+}
+.price, .eggs td span{
+    font-size: 3.4rem;
+}
+.with_border{
+    border-right: none;
+}
+.frits {
+    margin-bottom:0;
+}
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -1440,6 +1524,13 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
         background-repeat: repeat-y;
         background-size: 145% auto;
     }
+    .fr-toast, .pancakes{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .with_border{
+        border-right: none;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -1466,6 +1557,13 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
         background-repeat: repeat-y;
         background-size: 145% auto;
     }
+    .fr-toast, .pancakes{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .with_border{
+        border-right: none;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -1480,6 +1578,12 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .content_contact_wrapper .left,
     .content_contact_wrapper .right{
         background-size: auto 80%;
+    }
+    .price, .eggs td span{
+        font-size: 2.4rem;
+    }
+    .savory table{
+        font-size: 0.9rem;
     }
  }
 
@@ -1506,10 +1610,14 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .nf-field-element .datepicker.pikaday__display,
     .nf-field-element>#nf-field-7,
     #nf-field-11-wrap .nf-field-element select,
-    .nf-field-element>#nf-field-10{
+    .nf-field-element>#nf-field-10,
+    .fr-toast, .pancakes, .sweet table, .savory table, .sandwiches,
+    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table{
         font-size: 1.1rem;
     }
-    
+    .price, .eggs td span{
+        font-size: 3.4rem;
+    }
     .menu.title-menu td{
         font-size: 1.5rem;
     }
@@ -1538,8 +1646,14 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .nf-field-element .datepicker.pikaday__display,
     .nf-field-element>#nf-field-7,
     #nf-field-11-wrap .nf-field-element select,
-    .nf-field-element>#nf-field-10{
+    .nf-field-element>#nf-field-10, 
+    .burger, .snacks, .fingerlicking_content, .frits table,
+    .fr-toast, .pancakes, .sweet table, .savory table, .sandwiches,
+    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table{
         font-size: 1.3rem;
+    }
+    .price, .eggs td span{
+        font-size: 4rem;
     }
     .menu.title-menu td{
         font-size: 1.7rem;
@@ -1556,11 +1670,17 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .modal-body li{
         font-size: 1.4rem;
     }
+    .sweet td, .savory td {
+        padding: 5px 15px;
+    }
  }
  @media (min-width: 1401px) and (max-width: 1700px){
     .content_pakketten_wrapper{
         background-size: auto 100%;
         background-position: center top;
+    }
+    .fingerlicking_content td {
+        padding: 0 15px 10px 0;
     }
  }
 
@@ -1592,8 +1712,13 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .nf-field-element>#nf-field-7,
     #nf-field-11-wrap .nf-field-element select,
     .nf-field-element>#nf-field-10,
-	.burger, .snacks{
+	.burger, .snacks, .fingerlicking_content, .frits table,
+    .fr-toast, .pancakes, .sweet table, .savory table, .sandwiches,
+    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table{
         font-size: 1.7rem;
+    }
+    .price, .eggs td span{
+        font-size: 4.5rem;
     }
     .menu.title-menu td{
         font-size: 2rem;
@@ -1628,6 +1753,12 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .nf-form-content input.ninja-forms-field, 
     .nf-form-content select.ninja-forms-field:not([multiple]){
         height: 70px !important;
-
+    }
+    .sweet td, .savory td {
+        padding: 10px 20px;
+    }
+    .make-more {
+        padding-right: 30px;
+        padding-left: 30px;
     }
  }
