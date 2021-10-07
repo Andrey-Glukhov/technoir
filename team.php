@@ -99,7 +99,7 @@ get_header(); ?>
 	
     </div>
  
-    <div class="row justify-content-center instructions-row">
+    <div class="content_pakketten_wrapper row justify-content-center instructions-row">
         <!-- <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/werk-arrow.png"> -->
         <div class="instructions col-md-8 col-sm-10 col-11">
             <img class="doen_title"

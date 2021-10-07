@@ -83,7 +83,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="col-1 d-md-block d-sm-none d-none">
+                <div class="col-1 d-lg-block d-md-none d-sm-none d-none">
                     <img src="<?php echo get_site_url();?>/wp-content/themes/technoir/img/menu-arrow.png">
                 </div>
                 <div class="col-lg-5 col-md-7 col-sm-8 col-10">
@@ -220,7 +220,7 @@ get_header(); ?>
                         </table>
                     </div>
                     <div class="eggs">
-                        <p class="v">(V)</p>
+                        <p class="v" style="position:absolute;">(V)</p>
                         <table>
                             <tr>
                                 <td span="1"><img
