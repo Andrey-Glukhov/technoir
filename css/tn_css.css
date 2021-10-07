@@ -1274,17 +1274,15 @@ background-repeat: no-repeat;
     overflow: hidden;
     margin-top: 50px;
 }
-.woocommerce-page.single-product .woocommerce-product-gallery {
-    /* background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
-    overflow: hidden; */
-}
+
 .woocommerce-page.single-product  .summary.entry-summary {
     position: absolute;
     right: 5%;
     bottom: 5%;
     width: 200px
+}
+.woocommerce-page.single-product  .woocommerce-message {
+    display: none;
 }
 .input-text.qty.text {
     display: none;    
@@ -1301,8 +1299,8 @@ background-repeat: no-repeat;
     border-radius: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;/* убираем дефолнтные стрелочки */
-    font-family: inherit;/* наследует от родителя */
+    appearance: none;
+    font-family: inherit;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1;
@@ -1347,6 +1345,9 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     border-radius: 12px;
     box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
     overflow: hidden;
+}
+.woocommerce-cart.woocommerce-page #we_need_back {
+    height: fit-content;
 }
 
 /* ------------------ checkout----------------------*/
