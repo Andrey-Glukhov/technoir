@@ -1418,7 +1418,16 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
 .woocommerce-cart.woocommerce-page #we_need_back {
     height: fit-content;
 }
+.woocommerce-page .cart-collaterals .cart_totals {
+    float: none;
+    width: inherit;
+}
+.woocommerce-cart.woocommerce-page .checkout-button.button.alt.wc-forward {
+    background-color: #b6dcf1;
+    color: #f0047f;
+    border-radius: 20px;
 
+}
 /* ------------------ checkout----------------------*/
 .woocommerce-checkout.woocommerce-page {
     background-color: #000000;
