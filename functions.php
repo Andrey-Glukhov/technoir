@@ -237,6 +237,7 @@ function tn_add_refreshed_fragments($fragments) {
 
   $cart_part = ob_get_clean();
   $new_fragments = [];
-  $new_fragments['a.cart-contents'] = $cart_part;
+  //$new_fragments['a.cart-contents'] = $cart_part;
+  $new_fragments['div#menu-item-999'] = $cart_part;
   return $new_fragments;
 }
