@@ -145,12 +145,12 @@ function tn_output_cart_wrapper() {
 
 	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
 	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
-	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/shop-title.png"></div></div>';
-	echo '<div class="row"><div class="tn_cart_form col-10 offset-1">';
+	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/cart_title.png"></div></div>';
+	echo '<div class="row"><div class="tn_cart_form col-10 offset-1"><div class="row">';
 }
 function tn_output_cart_wrapper_end() {
 
-	echo '</div></div></main></div>';
+	echo '</div></div></div></main></div>';
 
 }
 add_action( 'woocommerce_before_cart', 'tn_output_cart_wrapper', 20 );
@@ -162,7 +162,7 @@ function tn_output_checkout_wrapper() {
 
 	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
 	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
-	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/shop-title.png"></div></div>';
+	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/checkout_title.png"></div></div>';
 	echo '<div class="row"><div class="tn_checkout_form col-10 offset-1">';
 }
 function tn_output_checkout_wrapper_end() {
@@ -187,7 +187,7 @@ add_filter('woocommerce_dropdown_variation_attribute_options_args', 'tn_change_d
 
 function tn_change_default_option($options) {
 	if (is_array($options)) {
-		$options['show_option_none'] = 'Kiezen';
+		$options['show_option_none'] = 'Kies een maat';//'Kiezen';
 	}	
 	return $options;
 }

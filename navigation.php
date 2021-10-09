@@ -6,7 +6,7 @@
     </button>
 
     <div class="navbar-collapse offcanvas-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav mb-2 mb-lg-0">
       <?php
       wp_nav_menu(array(
         'theme_location' => 'primary',
@@ -17,6 +17,7 @@
       )
     );
     ?>
+		<li class="menu-item socials"><a href="https://www.instagram.com/technoirrotterdam/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/technoirrotterdam" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
   </ul>
     </div>
   </div>

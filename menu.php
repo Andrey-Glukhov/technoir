@@ -220,7 +220,7 @@ get_header(); ?>
                         </table>
                     </div>
                     <div class="eggs">
-                        <p class="v">(V)</p>
+                        <p class="v" style="position:absolute;">(V)</p>
                         <table>
                             <tr>
                                 <td span="1"><img
