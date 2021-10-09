@@ -18,7 +18,10 @@
     );
     ?>
 		<li class="menu-item socials"><a href="https://www.instagram.com/technoirrotterdam/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/technoirrotterdam" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+    
   </ul>
+ 
     </div>
   </div>
 </nav>
+<?php tn_cart_link();?>
