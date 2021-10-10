@@ -1322,9 +1322,7 @@ padding-right: 20px;
     .cart_totals table{
         border: none !important;
     }
-    .cart-collaterals{
-        border: 1px solid #f0047f;
-    }
+
 /* ------------------ FOOTER ----------------------*/
 .footer-wrapper{
 background-color: #000000;
@@ -1495,7 +1493,32 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     background-color: #b6dcf1;
     color: #f0047f;
     border-radius: 20px;
-
+}
+.cart-collaterals{
+    border: 1px solid #f0047f;
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px 5px #f0047f; 
+box-shadow: 0px 0px 15px 5px #f0047f;
+}
+.product-wrapper-col,
+.totals-wrapper-col{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.shop_table.shop_table_responsive{
+    margin-top: 30px !important;
+    text-transform: uppercase;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    color: #f0047f;
+    font-size: 1rem;
+}
+.order-total>th,
+.order-total>td{
+    border-top: none !important;
 }
 /* ------------------ checkout----------------------*/
 .woocommerce-checkout.woocommerce-page {
