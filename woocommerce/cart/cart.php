@@ -88,7 +88,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
 						} else {
-							$product_quantity = woocommerce_quantity_input(
+							 $product_quantity = woocommerce_quantity_input(
 								array(
 									'input_name'   => "cart[{$cart_item_key}][qty]",
 									'input_value'  => $cart_item['quantity'],
@@ -99,20 +99,20 @@ do_action( 'woocommerce_before_cart' ); ?>
 								$_product,
 								false
 							);
-						}
-
-						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
-						?>
+						}?>
+							 <div class="quantity-arrow-minus"> - </div>
+							<?php echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok. ?>
+							<div class="quantity-arrow-plus"> + </div>						
                         </div>
                     </td>
 
 
 
-                    <!-- <td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>"> -->
+                    <td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
                     <?php
-								//echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
+								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 							?>
-                    <!-- </td> -->
+                    </td>
                 </tr>
                 <?php
 				}

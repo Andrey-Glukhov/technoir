@@ -1319,6 +1319,9 @@ padding-right: 20px;
         font-size: 1rem;
         vertical-align: bottom;
     }
+    .product-subtotal {
+        display: none;
+    }
     .product-name a{
         color: #f0047f;
         text-decoration: none;
@@ -1330,6 +1333,53 @@ padding-right: 20px;
     td.product-name{
         width: 50%;
     }
+    .cart-collaterals{
+        border: 1px solid #f0047f;
+    }
+    .cart_item .input-text.qty.text {
+        display:block;
+    }
+    .woocommerce-cart-form .actions {
+        display: none;
+    }
+
+    .product-name input[type=number]::-webkit-inner-spin-button,
+    .product-nameinput[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.product-quantity {
+    display: flex;
+}
+.product-name input[type=number]{
+    position: relative;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    color: #f0047f;
+    width: 30px;
+  -moz-appearance: textfield;
+}
+
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+  cursor: pointer;
+  font-size: 20px;
+  /* padding: 5px 12px;
+  width: 30px; */
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: #f0047f;
+  outline: none;
+  color: #f0047f;
+  background-color: #ffffff;
+}
+.woocommerce .product-name .quantity .qty {
+    width: 30px;
+}
 
 /* ------------------ FOOTER ----------------------*/
 .footer-wrapper{
