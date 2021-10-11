@@ -70,6 +70,7 @@ z-index: 1000;
 	padding: 0 5px;
 	cursor:pointer;
 }
+
 /* ----------- cart icon ----------------*/
 
 span.menu-image-title-after.menu-image-title {
@@ -110,6 +111,9 @@ span.menu-image-title-after.menu-image-title {
     color: #ffffff;
 }
 /* ----------------------------------------------------*/
+.home .footer-wrapper{
+display: none;
+}
 
 #undervideo {
   position:relative;
@@ -1321,6 +1325,10 @@ padding-right: 20px;
     }
     .cart_totals table{
         border: none !important;
+    }
+    td.product-thumbnail,
+    td.product-name{
+        width: 50%;
     }
 
 /* ------------------ FOOTER ----------------------*/

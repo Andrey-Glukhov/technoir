@@ -48,7 +48,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
                     <!-- Product delete was here-->
-                    <td class="product-thumbnail" span="1">
+                    <td class="product-thumbnail">
                         <?php
 						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
@@ -60,7 +60,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
                     </td>
 
-                    <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>" span="1">
+                    <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
                         <?php
 						if ( ! $product_permalink ) {
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );

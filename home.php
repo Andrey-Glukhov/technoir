@@ -8,7 +8,7 @@ get_header(); ?>
     <div id="page_top" class="row">
         <div class="col-12">
             <div id="top_video">
-                <video id="start_video" class="show_video" preload="auto">
+                <video id="start_video" class="show_video" preload="auto" playsinline>
                     <source src="https://tech-noir.nl/wp-content/themes/technoir/vid/Technoir_logo%20with%20button.mp4">
                 </video>
                 <video id="start_video_vertical" preload="auto">
