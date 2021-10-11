@@ -1552,7 +1552,7 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
     overflow: hidden;
 }
-.woocommerce-cart.woocommerce-page #we_need_back {
+.woocommerce-cart.woocommerce-page #we_need_back, .woocommerce-checkout.woocommerce-page #we_need_back {
     height: fit-content;
 }
 .woocommerce-page .cart-collaterals .cart_totals {
@@ -1608,6 +1608,30 @@ box-shadow: 0px 0px 15px 5px #f0047f;
 .woocommerce-form-coupon-toggle {
     display: none;
 }
+
+.woocommerce-billing-fields__field-wrapper label, .woocommerce-billing-fields__field-wrapper label {
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    color: #f0047f;
+    font-size: 1rem;
+}
+
+.woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper input {
+    border: 2px solid #f0047f;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 2px 2px #f0047f; 
+    box-shadow: 0px 0px 2px 2px #f0047f;
+}
+/* .tn_checkout_form  {
+    border: 1px solid #f0047f;
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px 5px #f0047f;
+    box-shadow: 0px 0px 15px 5px #f0047f;
+}    */
+
 
 /* ------------------ MEDIA----------------------*/
 

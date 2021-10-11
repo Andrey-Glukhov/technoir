@@ -241,3 +241,26 @@ function tn_add_refreshed_fragments($fragments) {
   $new_fragments['div#menu-item-999'] = $cart_part;
   return $new_fragments;
 }
+
+add_filter( 'woocommerce_checkout_fields', 'tn_remove_fields', 9999 );
+
+function tn_remove_fields( $woo_checkout_fields_array ) {
+	
+	// she wanted me to leave these fields in checkout
+	// unset( $woo_checkout_fields_array['billing']['billing_first_name'] );
+	// unset( $woo_checkout_fields_array['billing']['billing_last_name'] );
+	// unset( $woo_checkout_fields_array['billing']['billing_phone'] );
+	// unset( $woo_checkout_fields_array['billing']['billing_email'] );
+	// unset( $woo_checkout_fields_array['order']['order_comments'] ); // remove order notes
+	
+	// and to remove the billing fields below
+	//unset( $woo_checkout_fields_array['billing']['billing_company'] ); // remove company field
+	//unset( $woo_checkout_fields_array['billing']['billing_country'] );
+	unset( $woo_checkout_fields_array['billing']['billing_address_1'] );
+	unset( $woo_checkout_fields_array['billing']['billing_address_2'] );
+	unset( $woo_checkout_fields_array['billing']['billing_city'] );
+	unset( $woo_checkout_fields_array['billing']['billing_state'] ); // remove state field
+	unset( $woo_checkout_fields_array['billing']['billing_postcode'] ); // remove zip code field
+
+	return $woo_checkout_fields_array;
+}
