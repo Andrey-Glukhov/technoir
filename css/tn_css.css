@@ -10,6 +10,12 @@ html {
   margin: 0;
 }
 
+@font-face {
+    font-family: "Studio Sun";
+    src: url("../fonts/Studio-Sun.woff2") format("woff2"),
+         url("../fonts/Studio-Sun.woff") format("woff");
+  }
+
 /* ------------------ NAVIGATION ----------------------*/
 #tech-navigation.bg-light{
     position: absolute;
@@ -1380,6 +1386,9 @@ padding-right: 20px;
 .woocommerce .product-name .quantity .qty {
     width: 30px;
 }
+.woocommerce-message{
+    display: none;
+}
 
 /* ------------------ FOOTER ----------------------*/
 .footer-wrapper{
@@ -1551,6 +1560,7 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     background-color: #b6dcf1;
     color: #f0047f;
     border-radius: 20px;
+    font-family: 'Studio Sun';
 }
 .cart-collaterals{
     border: 1px solid #f0047f;
@@ -1656,6 +1666,25 @@ margin-bottom: 30px;
 .frits {
     margin-bottom:0;
 }
+.woocommerce-cart-form__cart-item.cart_item .product-thumbnail{
+    display: initial !important;
+    margin: auto;
+}
+.product-thumbnail::before{
+    display: none;
+}
+.woocommerce-page table.cart td.actions .button{
+    display: none;
+}
+.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td{
+    background-color: transparent !important;
+}
+ .td.product-thumbnail, td.product-name{
+    width: 100%;
+}
+.woocommerce table.shop_table td{
+    border-top: none !important;
+}
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -1699,6 +1728,28 @@ margin-bottom: 30px;
     .with_border{
         border-right: none;
     }
+    .woocommerce-cart-form__cart-item.cart_item .product-thumbnail{
+        display: initial !important;
+        margin: auto;
+    }
+    .product-thumbnail::before{
+        display: none;
+    }
+    .woocommerce-page table.cart td.actions .button{
+        display: none;
+    }
+    .woocommerce .shop_table.shop_table_responsive .order-total>td{
+        background-color: transparent !important;
+    }
+    .td.product-thumbnail, td.product-name{
+        width: 100%;
+    }
+    .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td{
+        background-color: transparent !important;
+    }
+    .woocommerce table.shop_table td{
+        border-top: none !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -1731,6 +1782,9 @@ margin-bottom: 30px;
     }
     .with_border{
         border-right: none;
+    }
+    .woocommerce .shop_table.shop_table_responsive .order-total>td{
+        background-color: transparent !important;
     }
 }
 

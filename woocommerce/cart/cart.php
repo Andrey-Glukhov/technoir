@@ -18,7 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
-<div class="col-md-7 col-sm-10 col-11 product-wrapper-col">
+<div class="col-lg-7 col-md-6 col-sm-10 col-11 product-wrapper-col">
     <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
         <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
@@ -61,6 +61,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     </td>
 
                     <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+					<div>
                         <?php
 						if ( ! $product_permalink ) {
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -78,6 +79,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
 						}
 						?>
+						<div>
                         <div class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
                             <?php
 								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
@@ -104,6 +106,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<?php echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok. ?>
 							<div class="quantity-arrow-plus"> + </div>						
                         </div>
+					</div>
+					</div>
                     </td>
 
 
@@ -150,7 +154,7 @@ do_action( 'woocommerce_before_cart' ); ?>
         <?php do_action( 'woocommerce_after_cart_table' ); ?>
     </form>
 </div>
-<div class="col-md-4 col-sm-10 col-11 totals-wrapper-col">
+<div class="col-lg-4 col-md-5 col-sm-10 col-11 totals-wrapper-col">
     <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 
     <div class="cart-collaterals">
