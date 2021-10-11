@@ -146,7 +146,7 @@ function tn_output_cart_wrapper() {
 	echo '<div id="primary" class="container-fluid content-area"><main id="main" class="site-main" role="main">';
 	echo '<div class="products_wrapper row justify-content-center"><div id="we_need_back"></div> <div id="we_need_you" class="col-md-8 col-sm-10 col-12">';
 	echo '<img class="img-fluid" src="' .  get_site_url() . '/wp-content/themes/technoir/img/cart_title.png"></div></div>';
-	echo '<div class="row"><div class="tn_cart_form col-10 offset-1"><div class="row">';
+	echo '<div class="row"><div class="tn_cart_form col-10 offset-1"><div class="row justify-content-center">';
 }
 function tn_output_cart_wrapper_end() {
 
