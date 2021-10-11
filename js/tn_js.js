@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-
+  var timeout;
   // <<< MENU
   document.querySelector('#navbarSideCollapse').addEventListener('click', function () {
     document.querySelector('.offcanvas-collapse').classList.toggle('open')
@@ -54,35 +54,38 @@ document.addEventListener("DOMContentLoaded", function (event) {
       itemVideo.play();
     });
   }
+  
+  if ($('.tn_cart_form').length) {
+    $('.quantity-arrow-minus').on('click', function(event) {  
+      var inElement = $(this).siblings('.quantity').find('input[type=number]');  
+      if (+inElement.val() > 1)  {         
+        inElement.val(+inElement.val() -1);
+        inElement.trigger('change');
+      //$('[name="update_cart"]').trigger("click");
+    }
+    } );
+    $('.quantity-arrow-plus').on('click', function(event) {  
+      var inElement = $(this).siblings('.quantity').find('input[type=number]');  
+      inElement.val(+inElement.val() +1);
+      inElement.trigger('change');
+      //$('[name="update_cart"]').trigger("click");
+    } );
 
-  //  FORM  TO_DO ???
-  // var input = document.querySelector(".file_attach .wpcf7-file");
+    
 
-  // var label = document.querySelector(".file_string"),
-  //   labelVal = label.innerHTML;
-
-  // input.addEventListener("change", function (e) {
-  //   var fileName = "";
-  //   if (this.files && this.files.length > 1) {
-  //     fileName = (this.getAttribute("data-multiple-caption") || "").replace(
-  //       "{count}",
-  //       this.files.length
-  //     );
-  //   } else {
-  //     fileName = e.target.value.split("\\").pop();
-  //   }
-  //   if (fileName) {
-  //     label.innerHTML = labelVal + " " + fileName;
-  //   } else label.innerHTML = labelVal;
-  // });
-  // var iconAttach = document.querySelector(".attach_icon");
-  // iconAttach.addEventListener("click", function () {
-  //   input.click();
-  // });
-  // document.querySelector(".wpcf7-form").addEventListener("submit", function () {
-  //   document.querySelector(".file_string").innerHTML = "File:";
-  // });
-  // >>>
+    $("body").on("change", '.product-name input[type=number]', function (event ) {
+      event.preventDefault();
+      //$('[name="update_cart"]').trigger("click");
+      if ( timeout !== undefined ) {
+        clearTimeout( timeout );
+      }
+  
+      timeout = setTimeout(function() {
+        $("[name='update_cart']").trigger("click");
+      }, 1000 );
+   });
+  }
+  
  
 });
 
