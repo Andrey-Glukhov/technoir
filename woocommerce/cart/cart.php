@@ -61,8 +61,10 @@ do_action( 'woocommerce_before_cart' ); ?>
                     </td>
 
                     <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
-					<div>
-                        <?php
+                        <table>
+                            <tr>
+                                <td>
+                                    <?php
 						if ( ! $product_permalink ) {
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
 						} else {
@@ -79,14 +81,20 @@ do_action( 'woocommerce_before_cart' ); ?>
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
 						}
 						?>
-						<div>
-                        <div class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
-                            <?php
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
+                                    <?php
 								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 							?>
-                        </div>
-                        <div class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
-                            <?php
+
+                                </td>
+					</tr>
+					<tr>
+                                <td class="product-quantity"
+                                    data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+                                    <?php
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
 						} else {
@@ -102,20 +110,22 @@ do_action( 'woocommerce_before_cart' ); ?>
 								false
 							);
 						}?>
-							 <div class="quantity-arrow-minus"> - </div>
-							<?php echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok. ?>
-							<div class="quantity-arrow-plus"> + </div>						
-                        </div>
-					</div>
-					</div>
-                    </td>
+                                    <div class="quantity-arrow-minus"> - </div>
+                                    <?php echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok. ?>
+                                    <div class="quantity-arrow-plus"> + </div>
 
-
-
-                    <td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
-                    <?php
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-subtotal"
+                                    data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
+                                    <?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 							?>
+                                </td>
+
+                            </tr>
+                        </table>
                     </td>
                 </tr>
                 <?php
