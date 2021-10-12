@@ -76,7 +76,9 @@ z-index: 1000;
 	padding: 0 5px;
 	cursor:pointer;
 }
-
+.menu-item-999{
+display:none;	
+}
 /* ----------- cart icon ----------------*/
 
 span.menu-image-title-after.menu-image-title {

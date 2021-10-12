@@ -56,30 +56,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   
   if ($('.tn_cart_form').length) {
-    $('.quantity-arrow-minus').on('click', function(event) {  
-      var inElement = $(this).siblings('.quantity').find('input[type=number]');  
-      if (+inElement.val() > 1)  {         
-        inElement.val(+inElement.val() -1);
-        inElement.trigger('change');
-      //$('[name="update_cart"]').trigger("click");
-    }
-    } );
-    $('.quantity-arrow-plus').on('click', function(event) {  
-      var inElement = $(this).siblings('.quantity').find('input[type=number]');  
-      inElement.val(+inElement.val() +1);
-      inElement.trigger('change');
-      //$('[name="update_cart"]').trigger("click");
-    } );
-
-    
+    setButtonsListeners();
+    $( document.body ).on( 'wc_fragments_refreshed', function() { //?????  TEST
+      setButtonsListeners();
+		} );  
 
     $("body").on("change", '.product-name input[type=number]', function (event ) {
       event.preventDefault();
-      //$('[name="update_cart"]').trigger("click");
       if ( timeout !== undefined ) {
         clearTimeout( timeout );
-      }
-  
+      }  
       timeout = setTimeout(function() {
         $("[name='update_cart']").trigger("click");
       }, 1000 );
@@ -88,6 +74,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
  
 });
+
+function setButtonsListeners() {
+  $('.quantity-arrow-minus').on('click', function(event) {  
+    var inElement = $(this).siblings('.quantity').find('input[type=number]');  
+    if (+inElement.val() > 1)  {         
+      inElement.val(+inElement.val() -1);
+      inElement.trigger('change');
+  }
+  } );
+  $('.quantity-arrow-plus').on('click', function(event) {  
+    var inElement = $(this).siblings('.quantity').find('input[type=number]');  
+    inElement.val(+inElement.val() +1);
+    inElement.trigger('change');
+  } );
+}
 
 function observerCallback(entries, observer) {
   var flag = false;
