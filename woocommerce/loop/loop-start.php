@@ -19,5 +19,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<div class="col-10 offset-1">
+<div class="row justify-content-center">
+<div class="col-sm-10 col-11">
 <ul class="products row g-4">

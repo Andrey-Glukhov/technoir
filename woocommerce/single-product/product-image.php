@@ -36,9 +36,12 @@ $wrapper_classes   = apply_filters(
 	)
 );
 ?>
-<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
-	<figure class="woocommerce-product-gallery__wrapper">
-		<?php
+<div class="containter-fluid <?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>"
+    data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
+    <figure class="woocommerce-product-gallery__wrapper">
+        <div class="row">
+            <div class="col-md-6">
+                <?php
 		if ( $post_thumbnail_id ) {
 			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
 		} else {
@@ -51,8 +54,11 @@ $wrapper_classes   = apply_filters(
 
 		//do_action( 'woocommerce_product_thumbnails' );
 		?>
-		<div class="summary entry-summary">
-		<?php
+
+            </div>
+            <div class="col-md-6">
+                <div class="summary entry-summary">
+                    <?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
 		 *
@@ -67,7 +73,13 @@ $wrapper_classes   = apply_filters(
 		 */
 		do_action( 'woocommerce_single_product_summary' );
 		?>
-		</div>
+                </div>
 
-	</figure>
+            </div>
+
+        </div>
+
+
+
+    </figure>
 </div>

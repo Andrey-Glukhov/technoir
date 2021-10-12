@@ -63,7 +63,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
                         <table>
                             <tr>
-                                <td>
+                                <td colspan="2">
                                     <?php
 						if ( ! $product_permalink ) {
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -84,15 +84,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
-                                    <?php
-								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
-							?>
-
-                                </td>
-					</tr>
-					<tr>
-                                <td class="product-quantity"
+							<td class="product-quantity"
                                     data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
                                     <?php
 						if ( $_product->is_sold_individually() ) {
@@ -115,8 +107,17 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     <div class="quantity-arrow-plus"> + </div>
 
                                 </td>
-                            </tr>
+
+                                <td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
+                                    <?php
+								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
+							?>
+
+                                </td>
+					</tr>
+
                             <tr>
+							<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
                                 <td class="product-subtotal"
                                     data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
                                     <?php
