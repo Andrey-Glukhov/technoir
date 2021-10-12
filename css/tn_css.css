@@ -1323,18 +1323,19 @@ padding-right: 20px;
         font-style: normal;
         letter-spacing: 0.1rem;
         color: #f0047f;
-        font-size: 1rem;
+        font-size: 0.9rem;
         vertical-align: bottom;
     }
-    .product-subtotal {
-        display: none;
-    }
+.woocommerce table.shop_table td,
+.woocommerce table.shop_table tbody th{
+border-top: none !important;
+}
     .product-name a{
         color: #f0047f;
         text-decoration: none;
         font-family: 'Studio Sun';
         font-weight: 100;
-        font-size: 1.7rem;
+        font-size: 1.1rem;
         letter-spacing: 0.05rem;
     }
     .cart_totals table{
@@ -1387,6 +1388,7 @@ padding-right: 20px;
   outline: none;
   color: #f0047f;
   background-color: #ffffff;
+  font-size: 0.9rem;
 }
 .woocommerce .product-name .quantity .qty {
     width: 30px;
@@ -1475,7 +1477,8 @@ background-repeat: no-repeat;
 
 .tn_single_product {
     position: relative;
-    height: 60vh;
+    min-height: 60vh;
+    height: fit-content;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0px 0px 17px 10px rgb(240 240 240 / 70%);
@@ -1484,10 +1487,11 @@ background-repeat: no-repeat;
 }
 
 .woocommerce-page.single-product  .summary.entry-summary {
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    width: 200px
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .woocommerce-page.single-product  .woocommerce-message {
     display: none;
@@ -1500,7 +1504,7 @@ background-repeat: no-repeat;
 }
 .variations .value select[name="attribute_pa_size"] {
     display: block;
-    width: 160px; 
+    width: fit-content;
     padding: .75rem 2.5rem .75rem 1rem;
     background: none;
     border: 3px solid #f0047f; 
@@ -1544,6 +1548,39 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
 .single_variation_wrap .woocommerce-variation.single_variation .woocommerce-variation-price {
     display: none;
 }
+h1.product_title.entry-title{
+    color: #080238;
+    text-decoration: none;
+    font-family: 'Studio Sun';
+    font-weight: 100;
+    font-size: 3rem;
+    letter-spacing: 0.05rem;
+    text-align: end;
+    text-shadow: -4px 4px 0px #f0047f;
+}
+p.price{
+    color: #f0047f;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+}
+.woocommerce-product-details__short-description p{
+    color: #f0047f;
+    font-family: ff-ginger-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+}
+.single_variation_wrap{
+    width: 65%;
+    margin-left: auto;
+}
+.woocommerce img, .woocommerce-page img {
+    width: 100%;
+}
 /* ------------------ CART----------------------*/
 .woocommerce-cart.woocommerce-page {
     background-color: #000000;
@@ -1570,6 +1607,7 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     font-size: 1.7rem;
     letter-spacing: 0.05rem;
     padding: 18px;
+    font-size: 1.1rem;
 }
 .cart-collaterals{
     border: 1px solid #f0047f;
@@ -1719,6 +1757,28 @@ margin-bottom: 30px;
 .woocommerce table.shop_table td{
     border-top: none !important;
 }
+.single_variation_wrap{
+width: 95%;
+}
+div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_cart_button.button.alt{
+    height: 50px;
+}
+.woocommerce-page.single-product .summary.entry-summary{
+    padding: 20px;
+}
+.product-name::before,
+.product-name td::before{
+    display: none;
+}
+.product-name, .product-name table{
+    width: 100%;
+}
+.woocommerce table.shop_table_responsive tbody th, .woocommerce-page table.shop_table_responsive tbody th{
+    display: block;
+}
+.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
+    text-align: left !important;
+}
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -1785,6 +1845,19 @@ margin-bottom: 30px;
     .woocommerce table.shop_table td{
         border-top: none !important;
     }
+    .product-name::before,
+    .product-name td::before{
+        display: none;
+    }
+    .product-name, .product-name table{
+        width: 100%;
+    }
+    .woocommerce table.shop_table_responsive tbody th, .woocommerce-page table.shop_table_responsive tbody th{
+        display: block;
+    }
+    .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
+        text-align: left !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -1821,6 +1894,12 @@ margin-bottom: 30px;
     .woocommerce .shop_table.shop_table_responsive .order-total>td{
         background-color: transparent !important;
     }
+    .single_variation_wrap{
+        width: 85%;
+    }
+    h1.product_title.entry-title{
+        font-size: 2rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -1845,6 +1924,10 @@ margin-bottom: 30px;
 	#tech-navigation.bg-light{
     right: 2.5rem;
 		left:unset;
+}
+.product-name a,
+.woocommerce-cart.woocommerce-page .checkout-button.button.alt.wc-forward{
+font-size: 1.4rem;
 }
  }
 
@@ -1873,7 +1956,9 @@ margin-bottom: 30px;
     #nf-field-11-wrap .nf-field-element select,
     .nf-field-element>#nf-field-10,
     .fr-toast, .pancakes, .sweet table, .savory table, .sandwiches,
-    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table{
+    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table,
+    .woocommerce-product-details__short-description p, .variations .value select[name="attribute_pa_size"],
+    .product-name, .shop_table.shop_table_responsive, .quantity-arrow-minus, .quantity-arrow-plus{
         font-size: 1.1rem;
     }
     .price, .eggs td span{
@@ -1885,6 +1970,19 @@ margin-bottom: 30px;
 	#tech-navigation.bg-light{
     right: 2.5rem;
 		left:unset;
+}
+p.price{
+    font-size: 2rem;
+}
+h1.product_title.entry-title{
+    font-size: 3.9rem;
+}
+div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_cart_button.button.alt{
+    height: 55px;
+}
+.product-name a,
+.woocommerce-cart.woocommerce-page .checkout-button.button.alt.wc-forward{
+font-size: 1.8rem;
 }
  }
 
@@ -1914,7 +2012,9 @@ margin-bottom: 30px;
     .nf-field-element>#nf-field-10, 
     .burger, .snacks, .fingerlicking_content, .frits table,
     .fr-toast, .pancakes, .sweet table, .savory table, .sandwiches,
-    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table{
+    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table,
+    .woocommerce-product-details__short-description p, .variations .value select[name="attribute_pa_size"],
+    .product-name, .shop_table.shop_table_responsive, .quantity-arrow-minus, .quantity-arrow-plus{
         font-size: 1.3rem;
     }
     .price, .eggs td span{
@@ -1941,6 +2041,19 @@ margin-bottom: 30px;
 	#tech-navigation.bg-light{
     right: 2.5rem;
 	left:unset;
+}
+p.price{
+    font-size: 2.5rem;
+}
+h1.product_title.entry-title{
+    font-size: 4.6rem;
+}
+div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_cart_button.button.alt{
+    height: 70px;
+}
+.product-name a,
+.woocommerce-cart.woocommerce-page .checkout-button.button.alt.wc-forward{
+font-size: 2.4rem;
 }
  }
  @media (min-width: 1401px) and (max-width: 1700px){
@@ -1983,8 +2096,22 @@ margin-bottom: 30px;
     .nf-field-element>#nf-field-10,
 	.burger, .snacks, .fingerlicking_content, .frits table,
     .fr-toast, .pancakes, .sweet table, .savory table, .sandwiches,
-    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table{
+    .sweet p, .savory p, .warm, .eggs, .dessert table, .side_dishes table,
+    .woocommerce-product-details__short-description p, .variations .value select[name="attribute_pa_size"],
+    .product-name, .shop_table.shop_table_responsive, .quantity-arrow-minus, .quantity-arrow-plus{
         font-size: 1.7rem;
+    }
+    .variations .value select[name="attribute_pa_size"]{
+        padding: 1rem 4rem 1rem 2rem;
+    }
+    div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_cart_button.button.alt{
+        height: 70px;
+    }
+    p.price{
+        font-size: 3rem;
+    }
+    h1.product_title.entry-title{
+        font-size: 6rem;
     }
     .price, .eggs td span{
         font-size: 4.5rem;
@@ -2033,5 +2160,9 @@ margin-bottom: 30px;
 	#tech-navigation.bg-light{
     right: 2.5rem;
 	left:unset;
+}
+.product-name a,
+.woocommerce-cart.woocommerce-page .checkout-button.button.alt.wc-forward{
+font-size: 3rem;
 }
  }

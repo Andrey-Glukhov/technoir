@@ -31,8 +31,8 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<!-- <div class="row"> -->
-<div id="product-<?php the_ID(); ?>" class="tn_single_product col-10 offset-1">
+<div class="row justify-content-center">
+<div id="product-<?php the_ID(); ?>" class="tn_single_product col-sm-10 col-11">
 
 	<?php
 	/**
@@ -73,6 +73,6 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
 </div>
-<!-- </div> -->
+</div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

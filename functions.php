@@ -103,7 +103,7 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_p
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 
 // Remove single prodict short description
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 
 
 // Remove single product price 
