@@ -1672,6 +1672,12 @@ box-shadow: 0px 0px 15px 5px #f0047f;
     box-shadow: 0px 0px 15px 5px #f0047f;
 }    */
 
+.woocommerce-billing-fields h3{
+    display: none;
+}
+.checkout .woocommerce-checkout{
+padding: 30px 0;
+}
 
 /* ------------------ MEDIA----------------------*/
 
@@ -1779,6 +1785,24 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
 .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
     text-align: left !important;
 }
+.woocommerce-cart-form__cart-item.cart_item .product-name .product-quantity{
+    display: flex !important;
+}
+.woocommerce table.shop_table_responsive tr, .woocommerce-page table.shop_table_responsive tr{
+    display: table-row;
+}
+.woocommerce-page table.shop_table_responsive tr td.product-price,
+.woocommerce-page table.shop_table_responsive tr th.product-subtotal,
+.woocommerce-page table.shop_table_responsive tr td.product-subtotal,
+.woocommerce-page table.shop_table_responsive tr.cart-subtotal td,
+.woocommerce-page table.shop_table_responsive tr.cart-subtotal th,
+.woocommerce-page table.shop_table_responsive tr.order-total td{
+    display: table-cell !important;
+} 
+.cart-subtotal td::before,
+.order-total td::before{
+    display: none;
+}
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -1858,6 +1882,31 @@ div.woocommerce-variation-add-to-cart.variations_button button.single_add_to_car
     .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
         text-align: left !important;
     }
+    .woocommerce-cart-form__cart-item.cart_item .product-name .product-quantity{
+        display: flex !important;
+    }
+    .woocommerce table.shop_table_responsive tr, .woocommerce-page table.shop_table_responsive tr{
+        display: table-row;
+    }
+    .woocommerce-page table.shop_table_responsive tr td.product-price,
+    .woocommerce-page table.shop_table_responsive tr th.product-subtotal,
+    .woocommerce-page table.shop_table_responsive tr td.product-subtotal,
+    .woocommerce-page table.shop_table_responsive tr.cart-subtotal td,
+    .woocommerce-page table.shop_table_responsive tr.cart-subtotal th,
+    .woocommerce-page table.shop_table_responsive tr.order-total td{
+        display: table-cell !important;
+    } 
+    .cart-subtotal td::before,
+    .order-total td::before{
+        display: none;
+    }
+    .product-name a,
+.woocommerce-cart.woocommerce-page .checkout-button.button.alt.wc-forward{
+font-size: 1.4rem;
+}
+.shop_table.shop_table_responsive.cart .product-name td{
+display: table-cell;
+}
 }
 
 /* Medium devices (tablets, 768px and up)*/
