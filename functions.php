@@ -256,11 +256,11 @@ function tn_remove_fields( $woo_checkout_fields_array ) {
 	// and to remove the billing fields below
 	//unset( $woo_checkout_fields_array['billing']['billing_company'] ); // remove company field
 	//unset( $woo_checkout_fields_array['billing']['billing_country'] );
-	unset( $woo_checkout_fields_array['billing']['billing_address_1'] );
-	unset( $woo_checkout_fields_array['billing']['billing_address_2'] );
-	unset( $woo_checkout_fields_array['billing']['billing_city'] );
-	unset( $woo_checkout_fields_array['billing']['billing_state'] ); // remove state field
-	unset( $woo_checkout_fields_array['billing']['billing_postcode'] ); // remove zip code field
+	// unset( $woo_checkout_fields_array['billing']['billing_address_1'] );
+	// unset( $woo_checkout_fields_array['billing']['billing_address_2'] );
+	// unset( $woo_checkout_fields_array['billing']['billing_city'] );
+	// unset( $woo_checkout_fields_array['billing']['billing_state'] ); // remove state field
+	// unset( $woo_checkout_fields_array['billing']['billing_postcode'] ); // remove zip code field
 
 	return $woo_checkout_fields_array;
 }
